@@ -1,0 +1,158 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.header_style{
+    display:flex;
+    flex-flow: row;
+     justify-content: space-around;
+      height: 40px; 
+      width: 100%; 
+      background : green; 
+      position: fixed; 
+}
+
+.header_section{
+display: flex;
+background: gray;
+width: 300px ;
+height: inherit;
+justify-content: center;
+align-items: center;
+}
+.div1{
+  width:100vw;
+  height: 80vh;
+  background-attachment: fixed;
+  background-image: url("../Drawables/Images/hero2.jpg"); 
+  padding-top: 40px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+
+}
+
+.div1_content_section{
+    float: right;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 80%;
+}
+.div1 h1{
+    color: white;
+}
+.in_div1_content_section_div{
+    display: flex;
+    width: inherit;
+    height: 33%;
+    align-items: center;
+    
+}
+.items ul li {
+    padding-top: 9px;
+    list-style: none;
+}
+.items img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.header_slider{
+display: none;
+flex-direction:column;
+justify-content: space-around;
+width:50px;
+height: inherit ;
+background-color: grey;
+float: left;
+align-items: center;
+
+}
+.header_slider_inside{
+    background-color: azure;
+    width: inherit;
+    height: 5px;
+    border-radius: 8px;
+}
+.item_container{
+    display: flex;
+    width:100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color:white;
+}
+.items{
+    display: flex;
+    float: left;
+    width: 31%;
+    border:3px dotted black;
+    justify-content: center;
+    align-items: center;
+    max-width: 60%;
+    min-width: 30%;
+    
+}
+
+@media screen and ( max-width:780px ) {
+.header_section{
+display:none;
+background: red;
+}
+.header_style{
+    background: red;
+}
+.div1{
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+}
+.header_slider{
+    display: flex;
+    float: left;
+    flex-direction:column;
+    justify-content: space-around;
+    width:30px;
+    height: inherit ;
+    background-color: black;
+    float: left;
+    align-items: center;
+    }
+    .header_style{
+        display:flex;
+        flex-flow: row;
+         justify-content: flex-start;
+          height: 40px; 
+          width: 100%; 
+          background : green; 
+          position: fixed; 
+    
+        
+        }
+        
+} 
+
+@media screen and (max-width: 880px){
+    .item_container{
+        display: flex;
+        width:100%;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color:white;
+    }
+    .items{
+        display: flex;
+        float: left;
+        width: 70%;
+        border:3px dotted black;
+        justify-content: center;
+        align-items: center;
+        max-width: 60%;
+        min-width: 30%;
+        
+    }
+
+}
