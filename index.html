@@ -1,92 +1,1224 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width , initial-scale = 1">
 
-        <link rel="stylesheet" href="./files_CSS/list_items.css">
-    </head>
-    <body>
-        <header  class="header_style" >
-          <div class="header_slider">           
-            <hr class="header_slider_inside"/> 
-            <hr class="header_slider_inside"/> 
-            <hr class="header_slider_inside"/>    
-          </div>
-            <section class="header_section">
-                    hello                
-            </section>
-            <section class="header_section">
-                hello2
-            </section>
-            <section class="header_section">
-                hello3
-            </section>
+<head>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+
+    <meta name="viewport" content="width=device-width , initial-scale = 1">
+    <link href="https://fonts.googleapis.com/css?family=Basic|Exo+2|Lobster|Pacifico|Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="./files_CSS/list_items.css">
+</head>
+
+<body>
+    <header class="header_style">
+        <div class="header_slider">
+            <hr class="header_slider_inside" />
+            <hr class="header_slider_inside" />
+            <hr class="header_slider_inside" />
+        </div>
+        <img src="./Drawables/Images/logo.png">
+        <section class="header_section">
+            <a href="#mobiles" style="color:white; text-decoration: none;"> Mobiles</a>
+        </section>
+        <section class="header_section">
+            <a href="#Tv" style="color:white; text-decoration: none;"> Smart-Tv</a>
+        </section>
+        <section class="header_section">
+            <a href="#E-phones" style="color:white; text-decoration: none;"> Earphones</a>
+        </section>
     </header>
-        <div class = "div1">
-           <section class="div1_content_section">
-               <div  class="in_div1_content_section_div">
-                   <h1>Shoppping like Never Before</h1>
-               </div>
-               <div class="in_div1_content_section_div">
-                   <h1> 50% off on Electronics</h1>
-               </div>
-               <div class="in_div1_content_section_div">
-                <h1> Click here to Reedem points</h1>
-               </div>
-           </section>
-                
-        </div>               
-                
-                <div class="item_container">
-                    <section class="items">
-                        <img src="../root/Drawables/Images/mob1.jpg">    
-                    </section>
-                
-                    <section class="items" >
-                        
-                            <ul>
-                                <li>
-                                    <strong >Shipping:</strong>
-                                    <span>Free</span>
-                                </li>
-                                <li>
-                                    <strong >Delivery:</strong>
-                                    <span> 2-7 working Days</span>
-                                </li>
-                                <li>
-                                    <strong>Price: </strong>
-                                    <span> Rs.10,000</span>
-                                </li>
-                                <li>
-                                    <strong >Screen Size :</strong>
-                                    <span>5.5 inch</span>
-                                </li>
-                                <li>
-                                    <strong>Screen Resolution:</strong>
-                                    <span> 1920 x 1080 pixels</span>
-                                </li>
-                                <li>
-                                        <strong>Screen Type:</strong>
-                                        <span> PLS</span>
-                                </li>
-                                <li>
-                                        <strong>Pixel Density:</strong>
-                                        <span> 401 PPI</span>
-                                </li>
-                                      <li>
-                                       <strong>Screen Protection:</strong>
-                                        <span> Corning Gorilla Glas</span>
-                                 </li>
-                                 <li>
-                                        <strong>Bezel Less :</strong>
-                                          <span>No</span>
-                                    </li>
-                            </ul>
-                        
-                    </section>
-                        
-                    <section  class="items">
-                            item best price
-                    </section>
-                </div>
-    </body>
+    <div class="div1">
+        <section class="div1_content_section">
+            <h1 style="color:white;font-size:10vw;"> Shopio</h1>
+        </section>
+        <section class="div1_content_section" id="hero_bleow_section">
+            <section class="below_view">
+                <h1>
+                    <ul>
+                        <li> Awsome Deals Everyday!! </li>
+                    </ul>
+                </h1>
+            </section>
+            <section class="below_view">
+                <h1>
+                    <ul>
+                        <li> Apply Coupon </li>
+                    </ul>
+                </h1>
+            </section>
+            <section class="below_view">
+                <h1>
+                    <ul>
+                        <li> Get your Best Deal!!</li>
+                    </ul>
+                </h1>
+            </section>
+        </section>
+        <div class="div1_activate_on_shrink">
+            <h1>Limited period offer Oreder Now!!</h1>
+        </div>
+
+    </div>
+
+    <div class="item_container" id="mobiles">
+        <section class="items">
+            <img src="../root/Drawables/Images/mob1.jpg">
+        </section>
+
+        <section class="items">
+
+            <ul>
+                <li>
+                    <strong>Model</strong>
+                    <span>Samsung Galaxy On Nxt 64GB</span>
+                </li>
+                <li>
+                    <strong>Shipping:</strong>
+                    <span>Free</span>
+                </li>
+                <li>
+                    <strong>Delivery:</strong>
+                    <span> 2-7 working Days</span>
+                </li>
+                <li>
+                    <strong>Price: </strong>
+                    <span> Rs.10,000</span>
+                </li>
+                <li>
+                    <strong>Screen Size :</strong>
+                    <span>5.5 inch</span>
+                </li>
+                <li>
+                    <strong>Screen Resolution:</strong>
+                    <span> 1920 x 1080 pixels</span>
+                </li>
+                <li>
+                    <strong>Screen Type:</strong>
+                    <span> PLS</span>
+                </li>
+                <li>
+                    <strong>Pixel Density:</strong>
+                    <span> 401 PPI</span>
+                </li>
+                <li>
+                    <strong>Screen Protection:</strong>
+                    <span> Corning Gorilla Glas</span>
+                </li>
+                <li>
+                    <strong>Bezel Less :</strong>
+                    <span>No</span>
+                </li>
+                <li>
+                    <strong>Internal Storag</strong>
+                    <span>64 GB</span>
+                </li>
+                <li>
+                    <strong>RAM</strong>
+                    <span>3 GB</span>
+                </li>
+                <li>
+                    <strong>Expandable Storage</strong>
+                    <span>256 GB</span>
+                </li>
+                <li>
+                    <strong>Supported Memory Card Type</strong>
+                    <span>MicroSD</span>
+                </li>
+                <li>
+                    <strong> Memory Card Slot Type</strong>
+                    <span>Dedicated Slot</span>
+                </li>
+                <li> <strong>Primary Camera Available</strong>
+                    <span>Yes</span>
+                </li>
+                <li> <strong>Full HD Recording</strong>
+                    <span> Yes </span>
+                </li>
+                <li> <strong>Primary Camera</strong>
+                    <span>13 MP</span>
+                </li>
+
+            </ul>
+
+        </section>
+
+        <section class="items">
+            <ul>
+
+                <li>
+                    <strong>Android</strong>
+                    <span>6.0.1</span>
+                </li>
+                <li>
+                    <strong>Micro USB Version</strong>
+                    <span>2.0</span>
+                </li>
+                <li>
+                    <strong>Bluetooth Version</strong>
+                    <span>v4.1</span>
+                </li>
+                <li>
+                    <strong>Battery Capacity</strong>
+                    <span>3300 mAh</span>
+                </li>
+                <li>
+                    <strong>Warranty</strong>
+                    <span>Brand Warranty of 1 Year</span>
+                </li>
+
+                <li>
+                    <strong>HD Recording</strong>
+                    <span>Yes</span>
+                </li>
+                <li> <strong>Network Type</strong>
+                    <span> 4G,2G,3G</span>
+                </li>
+                <li> <strong>Supported Networks</strong>
+                    <span> 4G, 3G , 2G</span>
+                </li>
+                <li> <strong>Internet Connectivity</strong>
+                    <span> 4G , 3G , Wi-Fi</span>
+                </li>
+                <li> <strong>3G Speed</strong>
+                    <span>HSPA+32Mbps</span>
+                </li>
+                <li> <strong>Bluetooth Support</strong>
+                    <span>Yes</span>
+                </li>
+                <li>
+                    <strong>Brand: </strong>
+                    <span>Samsung Exynos</span>
+                </li>
+                <li>
+                    <strong>Processor Speed: </strong>
+                    <span>1.6GHz </span>
+                </li>
+                <li>
+                    <strong>Chip:</strong>
+                    <span>Exynos 7870</span>
+                </li>
+                <li>
+                    <strong>Processor: </strong>
+                    <span>Type Octa-Core</span>
+                </li>
+                <li>
+                    <strong>RAM: </strong>
+                    <span>3GB</span>
+                </li>
+                <li>
+                    <strong>Graphics: </strong>
+                    <span>Mali-T830</span>
+                </li>
+                <li>
+                    <strong>Order Now:</strong>
+                    <span><a href="https://www.flipkart.com/samsung-galaxy-nxt-gold-64-gb/p/itmet6rhmfzdtrht?pid=MOBET6RH4XSXKM7D&srno=s_1_1&otracker=search&lid=LSTMOBET6RH4XSXKM7D5I3RAP&fm=SEARCH&iid=39665736-d5a6-45c6-b78d-3abe260f6605.MOBET6RH4XSXKM7D.SEARCH&ppt=Homepage&ppn=Homepage&ssid=4okhzroc9s0000001535390660403&qH=c52dc038d251ba45">
+                            Click Here</a></span>
+                </li>
+            </ul>
+
+        </section>
+
+    </div>
+    <hr style="padding:3px;">
+    <div class="item_container">
+        <section class="items">
+            <img src="../root/Drawables/Images/Iphone_X.png">
+
+        </section>
+
+        <section class="items">
+
+            <ul>
+                <li>
+                    <strong>Model</strong>
+                    <span>Apple iphone X</span>
+                </li>
+                <li>
+                    <strong>Shipping:</strong>
+                    <span>Free</span>
+                </li>
+                <li>
+                    <strong>Delivery:</strong>
+                    <span> 2-4 working Days</span>
+                </li>
+                <li>
+                    <strong>Price: </strong>
+                    <span> Rs. 70,000</span>
+                </li>
+                <li>
+                    <strong>Color :</strong>
+                    <span>5.5 inch</span>
+                </li>
+                <li>
+                    <strong>Space Gray:</strong>
+                    <span> Browse Type</span>
+                </li>
+                <li>
+                    <strong>Type:</strong>
+                    <span> Type</span>
+                </li>
+                <li>
+                    <strong>Sim Type:</strong>
+                    <span> Single</span>
+                </li>
+                <li>
+                    <strong>Touch Screen:</strong>
+                    <span>Yes</span>
+                </li>
+                <li>
+                    <strong>Bezel Less :</strong>
+                    <span>Yes</span>
+                </li>
+                <li>
+                    <strong>Internal Storag</strong>
+                    <span>64 GB</span>
+                </li>
+                <li>
+                    <strong>RAM</strong>
+                    <span>3 GB</span>
+                </li>
+                <li>
+                    <strong>Expandable Storage</strong>
+                    <span>NA</span>
+                </li>
+                <li>
+                    <strong>Supported Memory Card Type</strong>
+                    <span>NA</span>
+                </li>
+                <li>
+                    <strong> Memory Card Slot Type</strong>
+                    <span>NA</span>
+                </li>
+                <li> <strong>Primary Camera Available</strong>
+                    <span>Yes</span>
+                </li>
+                <li> <strong>Full HD Recording</strong>
+                    <span> Yes </span>
+                </li>
+                <li> <strong>Primary Camera</strong>
+                    <span>12+12 MP</span>
+                </li>
+                <li>
+                    <strong>OS</strong>
+                    <span>IOS 11</span>
+                </li>
+
+            </ul>
+        </section>
+        <section class="items">
+            <ul>
+                <li>
+                    <strong>Micro USB Version</strong>
+                    <span>Type C</span>
+                </li>
+                <li>
+                    <strong>Bluetooth Version</strong>
+                    <span>NA</span>
+                </li>
+                <li>
+                    <strong>Battery Capacity</strong>
+                    <span>3300 mAh</span>
+                </li>
+                <li>
+                    <strong>Warranty</strong>
+                    <span>Brand Warranty of 1 Year</span>
+                </li>
+
+                <li>
+                    <strong>HD Recording</strong>
+                    <span>Yes</span>
+                </li>
+                <li> <strong>Network Type</strong>
+                    <span> 4G,2G,3G</span>
+                </li>
+                <li> <strong>Supported Networks</strong>
+                    <span> 4G, 3G , 2G</span>
+                </li>
+                <li> <strong>Internet Connectivity</strong>
+                    <span> 4G , 3G , Wi-Fi</span>
+                </li>
+                <li> <strong>3G Speed</strong>
+                    <span>HSPA+32Mbps</span>
+                </li>
+                <li> <strong>Bluetooth Support</strong>
+                    <span>NO</span>
+                </li>
+                <li>
+                    <strong>Processor Type: </strong>
+                    <span>
+                        A11 Bionic Chip 64-bit</span>
+                </li>
+                <li>
+                    <strong>Processor Speed: </strong>
+                    <span>2.1GHz </span>
+                </li>
+                <li>
+                    <strong>Chip:</strong>
+                    <span> A11 Bionic Chip</span>
+                </li>
+                <li>
+                    <strong>Processor: </strong>
+                    <span>Type Octa-Core</span>
+                </li>
+                <li>
+                    <strong>RAM: </strong>
+                    <span>3GB</span>
+                </li>
+                <li>
+                    <strong>Graphics PPI: </strong>
+                    <span>455 PPI</span>
+                </li>
+                <li>
+                    <strong>Order Now:</strong>
+                    <span><a href="https://www.flipkart.com/apple-iphone-x-space-gray-64-gb/p/itmexrgv6hctyrav?pid=MOBEXRGVCMGVCGGQ&srno=b_1_1&otracker=browse&lid=LSTMOBEXRGVCMGVCGGQFLD1LA&fm=organic&iid=7cd5cd49-6bb8-40b0-ba0e-821c9d255ee4.MOBEXRGVCMGVCGGQ.SEARCH">
+                            Click Here</a></span>
+                </li>
+            </ul>
+
+        </section>
+
+    </div>
+    <hr style=" padding:3px" />
+    <div class="item_container">
+        <section class="items">
+            <img src="../root/Drawables/Images/one_plush.png">
+
+        </section>
+
+        <section class="items">
+
+            <ul>
+                <li>
+                    <strong>Model</strong>
+                    <span> OnePlus 6</span>
+                </li>
+                <li>
+                    <strong>Shipping:</strong>
+                    <span>Free</span>
+                </li>
+                <li>
+                    <strong>Delivery:</strong>
+                    <span> 2-7 working Days</span>
+                </li>
+                <li>
+                    <strong>Price: </strong>
+                    <span> Rs.34,000</span>
+                </li>
+                <li>
+                    <strong>Screen Size :</strong>
+                    <span> 6.28 inch</span>
+                </li>
+                <li>
+                    <strong>Screen Resolution:</strong>
+                    <span> 2280 x 1080 pixels</span>
+                </li>
+                <li>
+                    <strong>Screen Type:</strong>
+                    <span> PLS</span>
+                </li>
+                <li>
+                    <strong>Pixel Density:</strong>
+                    <span> 441 PPI</span>
+                </li>
+                <li>
+                    <strong>Screen Protection:</strong>
+                    <span> Corning Gorilla Glas</span>
+                </li>
+                <li>
+                    <strong>Bezel Less :</strong>
+                    <span>Yes</span>
+                </li>
+                <li>
+                    <strong>Internal Storag</strong>
+                    <span>64 GB</span>
+                </li>
+                <li>
+                    <strong>RAM</strong>
+                    <span>6 GB</span>
+                </li>
+                <li>
+                    <strong>Expandable Storage</strong>
+                    <span>NA</span>
+                </li>
+                <li>
+                    <strong>Supported Memory Card Type</strong>
+                    <span>NA</span>
+                </li>
+                <li>
+                    <strong> Memory Card Slot Type</strong>
+                    <span>NA</span>
+                </li>
+                <li> <strong>Primary Camera Available</strong>
+                    <span>Yes </span>
+                </li>
+                <li> <strong>Full HD Recording</strong>
+                    <span> Yes </span>
+                </li>
+                <li> <strong>Primary Camera</strong>
+                    <span>20 MP+16 MP</span>
+                </li>
+
+            </ul>
+
+        </section>
+
+        <section class="items">
+            <ul>
+
+                <li>
+                    <strong>Android</strong>
+                    <span> 8.1</span>
+                </li>
+                <li>
+                    <strong>Micro USB Version</strong>
+                    <span> Type C</span>
+                </li>
+                <li>
+                    <strong>Bluetooth Version</strong>
+                    <span>v4.1</span>
+                </li>
+                <li>
+                    <strong>Battery Capacity</strong>
+                    <span>3300 mAh</span>
+                </li>
+                <li>
+                    <strong>Warranty</strong>
+                    <span>Brand Warranty of 1 Year</span>
+                </li>
+
+                <li>
+                    <strong>HD Recording</strong>
+                    <span>Yes</span>
+                </li>
+                <li> <strong>Network Type</strong>
+                    <span> 4G,2G,3G</span>
+                </li>
+                <li> <strong>Supported Networks</strong>
+                    <span> 4G, 3G , 2G</span>
+                </li>
+                <li> <strong>Internet Connectivity</strong>
+                    <span> 4G , 3G , Wi-Fi</span>
+                </li>
+                <li> <strong>3G Speed</strong>
+                    <span>HSPA+32Mbps</span>
+                </li>
+                <li> <strong>Bluetooth Support</strong>
+                    <span>Yes</span>
+                </li>
+                <li>
+                    <strong>chip Brand: </strong>
+                    <span>SnapDragon 845</span>
+                </li>
+                <li>
+                    <strong>Processor Speed: </strong>
+                    <span>2Gzh </span>
+                </li>
+                <li>
+                    <strong>Chip:</strong>
+                    <span>Qualcomm SnapDragon 845</span>
+                </li>
+                <li>
+                    <strong>Processor: </strong>
+                    <span>Type Octa-Core</span>
+                </li>
+                <li>
+                    <strong>RAM: </strong>
+                    <span>6 GB</span>
+                </li>
+                <li>
+                    <strong>Graphics: </strong>
+                    <span>Mali-T830</span>
+                </li>
+                <li>
+                    <strong>Order Now:</strong>
+                    <span><a href="https://www.amazon.in/OnePlus-Mirror-Black-64GB-Memory/dp/B0756Z43QS/ref=sr_1_1?s=electronics&ie=UTF8&qid=1535390953&sr=1-1&keywords=one+plus+6+phone+64+gb+mobile">
+                            Click Here</a></span>
+                </li>
+            </ul>
+
+        </section>
+
+
+    </div>
+    <hr style=" padding:3px" />
+    <div class="item_container" id="Tv">
+        <section class="items">
+            <img src="../root/Drawables/Images/Panasonic_FX730.png">
+
+        </section>
+
+        <section class="items">
+
+            <ul>
+                <li>
+                    <strong>Model</strong>
+                    <span> Panasonic FX730 Series 123cm (49 inch) Ultra HD (4K) LED Smart TV (TH-49FX730D)</span>
+                </li>
+                <li>
+                    <strong>Price</strong>
+                    <span>Rs.84,990</span>
+                </li>
+                <li>
+                    <strong>Shipping:</strong>
+                    <span>Free</span>
+                </li>
+                <li>
+                    <strong>Delivery:</strong>
+                    <span> 2-7 working Days</span>
+                </li>
+                <li>
+                    <strong>Model: </strong>
+                    <span> TH-49FX730D</span>
+                </li>
+                <li>
+                    <strong>Screen Size :</strong>
+                    <span> 6.28 inch</span>
+                </li>
+                <li>
+                    <strong>Display Size</strong>
+                    <span>123 cm (49)</span>
+                </li>
+                <li>
+                    <strong>Screen Type:</strong>
+                    <span> LED</span>
+                </li>
+                <li>
+                    <strong>HD Technology & Resolution</strong>
+                    <span> Ultra HD (4K), 3840 x 2160</span>
+                </li>
+                <li>
+                    <strong>Curve TV:</strong>
+                    <span> No</span>
+                </li>
+                <li>
+                    <strong>Touchscreen :</strong>
+                    <span>No</span>
+                </li>
+                <li>
+                    <strong>HDMI</strong>
+                    <span> 3 </span>
+                </li>
+
+
+            </ul>
+
+        </section>
+
+        <section class="items">
+            <ul>
+                <li>
+                    <strong>USB</strong>
+                    <span>3</span>
+                </li>
+                <li>
+                    <strong>Width x Height x Depth (without stand)</strong>
+                    <span> 1106 mm x 644 mm x 78 mm</span>
+                </li>
+                <li>
+                    <strong>Weight (without stand)</strong>
+                    <span> 13.5 kg</span>
+                </li>
+                <li>
+                    <strong>Width x Height x Depth (with stand)</strong>
+                    <span>1106 mm x 699 mm x 232 mm</span>
+                </li>
+                <li>
+                    <strong>Weight (with stand)</strong>
+                    <span>14 kg</span>
+                </li>
+                <li>
+                    <strong>Stand Features</strong>
+                    <span>Wall Mount Included</span>
+                </li>
+
+                <li>
+                    <strong>Warranty Summary</strong>
+                    <span>1 Year Warranty</span>
+                </li>
+                <li> <strong>Covered in Warranty</strong>
+                    <span> Technical Failure</span>
+                </li>
+                <li> <strong>Not Covered in Warranty</strong>
+                    <span>Physical, Liquid Damages</span>
+                </li>
+                <li> <strong>Speaker Output RMS</strong>
+                    <span> 20 W</span>
+                    <li>
+                        <strong>Order Now:</strong>
+                        <span><a href="https://www.flipkart.com/panasonic-fx730-series-123cm-49-inch-ultra-hd-4k-led-smart-tv/p/itmf6mfge2ntyqy8?pid=TVSF6MFGJH4NATA5&lid=LSTTVSF6MFGJH4NATA5TL2PQR&marketplace=FLIPKART&srno=s_1_1&otracker=search&fm=SEARCH&iid=88555617-752e-4532-9dd0-732e98d94c5f.TVSF6MFGJH4NATA5.SEARCH&ppt=SearchPage&ppn=Search&ssid=0ludp2xie80000001535432898218&qH=e5ce42320a5dd9ab">
+                                Click Here</a></span>
+                    </li>
+            </ul>
+        </section>
+    </div>
+    <hr style="padding:3px;">
+    <div class="item_container">
+        <section class="items">
+            <img src="../root/Drawables/Images/Lg_OLED.png">
+        </section>
+        <section class="items">
+            <ul>
+                <li>
+                    <strong>Model</strong>
+                    <span> LG 164cm (65 inch) Ultra HD (4K) OLED Smart TV (OLED65B7T)</span>
+                </li>
+                <li>
+                    <strong>Price</strong>
+                    <span>Rs.2,87,000</span>
+                </li>
+                <li>
+                    <strong>Shipping:</strong>
+                    <span>Free</span>
+                </li>
+                <li>
+                    <strong>Delivery:</strong>
+                    <span> 2-7 working Days</span>
+                </li>
+                <li>
+                    <strong>Model: </strong>
+                    <span> OLED65B7T</span>
+                </li>
+                <li>
+                    <strong>Screen Size :</strong>
+                    <span> 6.28 inch</span>
+                </li>
+                <li>
+                    <strong>Display Size</strong>
+                    <span>164 cm (65)</span>
+                </li>
+                <li>
+                    <strong>Screen Type:</strong>
+                    <span>OLED</span>
+                </li>
+                <li>
+                    <strong>HD Technology & Resolution</strong>
+                    <span> Ultra HD (4K), 3840 x 2160</span>
+                </li>
+                <li>
+                    <strong>Curve TV:</strong>
+                    <span> No</span>
+                </li>
+                <li>
+                    <strong>Touchscreen :</strong>
+                    <span>No</span>
+                </li>
+                <li>
+                    <strong>HDMI</strong>
+                    <span> 2 </span>
+                </li>
+            </ul>
+        </section>
+        <section class="items">
+            <ul>
+                <li>
+                    <strong>USB</strong>
+                    <span>2</span>
+                </li>
+                <li>
+                    <strong>Width x Height x Depth (without stand)</strong>
+                    <span> 1106 mm x 644 mm x 78 mm</span>
+                </li>
+                <li>
+                    <strong>Weight (without stand)</strong>
+                    <span> 13.5 kg</span>
+                </li>
+                <li>
+                    <strong>Width x Height x Depth (with stand)</strong>
+                    <span>1461 mm x 56.7 mm</span>
+                </li>
+                <li>
+                    <strong>Weight (with stand)</strong>
+                    <span>14 kg</span>
+                </li>
+                <li>
+                    <strong>Stand Features</strong>
+                    <span>No Wall Mount</span>
+                </li>
+                <li>
+                    <strong>Warranty Summary</strong>
+                    <span>1 Year Warranty</span>
+                </li>
+                <li> <strong>Covered in Warranty</strong>
+                    <span> Technical Failure</span>
+                </li>
+                <li> <strong>Not Covered in Warranty</strong>
+                    <span>Physical, Liquid Damages</span>
+                </li>
+                <li> <strong>Speaker Output RMS</strong>
+                    <span> 27 W</span>
+                    <li>
+                        <strong>Order Now:</strong>
+                        <span><a href="https://www.flipkart.com/lg-164cm-65-inch-ultra-hd-4k-oled-smart-tv/p/itmf3h7bhhzber7e?pid=TVSEURNCMJ7FT4A5&lid=LSTTVSEURNCMJ7FT4A5PYSNMU&marketplace=FLIPKART&srno=s_1_1&otracker=search&fm=SEARCH&iid=deb0d40d-ba93-486e-9bc0-6ad1fa8a4aae.TVSEURNCMJ7FT4A5.SEARCH&ppt=SearchPage&ppn=Search&ssid=66wu4a3zeo0000001535435400068&qH=cb7f125531507f0f">
+                                Click Here</a></span>
+                    </li>
+            </ul>
+        </section>
+    </div>
+    <hr style="padding:3px;">
+    <div class="item_container">
+        <section class="items">
+            <img src="../root/Drawables/Images/Sony_led.png">
+        </section>
+        <section class="items">
+            <ul>
+                <li>
+                    <strong>Model</strong>
+                    <span> Sony 138.8cm (55 inch) Ultra HD (4K) LED Smart TV (KD-55X8500F)</span>
+                </li>
+                <li>
+                    <strong>Price</strong>
+                    <span>Rs.1,17,000</span>
+                </li>
+                <li>
+                    <strong>Shipping:</strong>
+                    <span>Free</span>
+                </li>
+                <li>
+                    <strong>Delivery:</strong>
+                    <span> 2-7 working Days</span>
+                </li>
+                <li>
+                    <strong>Model: </strong>
+                    <span>KD-55X8500F</span>
+                </li>
+                <li>
+                    <strong>Screen Size :</strong>
+                    <span> 6.28 inch</span>
+                </li>
+                <li>
+                    <strong>Display Size</strong>
+                    <span>164 cm (65)</span>
+                </li>
+                <li>
+                    <strong>Screen Type:</strong>
+                    <span>OLED</span>
+                </li>
+                <li>
+                    <strong>HD Technology & Resolution</strong>
+                    <span> Ultra HD (4K), 3840 x 2160</span>
+                </li>
+                <li>
+                    <strong>Curve TV:</strong>
+                    <span> No</span>
+                </li>
+                <li>
+                    <strong>Touchscreen :</strong>
+                    <span>No</span>
+                </li>
+                <li>
+                    <strong>HDMI</strong>
+                    <span> 2 </span>
+                </li>
+            </ul>
+        </section>
+        <section class="items">
+            <ul>
+                <li>
+                    <strong>USB</strong>
+                    <span>3</span>
+                </li>
+                <li>
+                    <strong>Width x Height x Depth (without stand)</strong>
+                    <span> 1106 mm x 644 mm x 78 mm</span>
+                </li>
+                <li>
+                    <strong>Weight (without stand)</strong>
+                    <span> 13.5 kg</span>
+                </li>
+                <li>
+                    <strong>Width x Height x Depth (with stand)</strong>
+                    <span>1106 mm x 699 mm x 232 mm</span>
+                </li>
+                <li>
+                    <strong>Weight (with stand)</strong>
+                    <span>14 kg</span>
+                </li>
+                <li>
+                    <strong>Stand Features</strong>
+                    <span>Wall Mount Included</span>
+                </li>
+
+                <li>
+                    <strong>Warranty Summary</strong>
+                    <span>1 Year Warranty</span>
+                </li>
+                <li> <strong>Covered in Warranty</strong>
+                    <span> Technical Failure</span>
+                </li>
+                <li> <strong>Not Covered in Warranty</strong>
+                    <span>Physical, Liquid Damages</span>
+                </li>
+                <li> <strong>Speaker Output RMS</strong>
+                    <span> 20 W</span>
+                    <li>
+                        <strong>Order Now:</strong>
+                        <span><a href="https://www.flipkart.com/panasonic-fx730-series-123cm-49-inch-ultra-hd-4k-led-smart-tv/p/itmf6mfge2ntyqy8?pid=TVSF6MFGJH4NATA5&lid=LSTTVSF6MFGJH4NATA5TL2PQR&marketplace=FLIPKART&srno=s_1_1&otracker=search&fm=SEARCH&iid=88555617-752e-4532-9dd0-732e98d94c5f.TVSF6MFGJH4NATA5.SEARCH&ppt=SearchPage&ppn=Search&ssid=0ludp2xie80000001535432898218&qH=e5ce42320a5dd9ab">
+                                Click Here</a></span>
+                    </li>
+            </ul>
+        </section>
+    </div>
+    <hr style="padding:3px;">
+    <div class="item_container" id="E-phones">
+        <section class="items">
+            <img src="../root/Drawables/Images/Shure.png">
+        </section>
+        <section class="items">
+            <ul>
+                <li>
+                    <strong>Brand:</strong>
+                    <span>Shure</span>
+                </li>
+                <li>
+                    <strong>Model:</strong>
+                    <span>SE425/span>
+
+                </li>
+                <li>
+                    <strong>Price:</strong>
+                    <span>18,000</span>
+
+                </li>
+                <li>
+                    <strong> Headphone Design:</strong>
+                    <span>In-Ear</span>
+                </li>
+                <li>
+                    <strong>Driver Unit:</strong>
+                    <span>Dual Dynamic MicroDriver</span>
+                </li>
+                <li>
+                    <strong>Microphone:</strong>
+                    <span>No</span>
+                </li>
+                <li>
+                    <strong>Frequency Response:</strong>
+                    <span>20Hz-19000Hz</span>
+                </li>
+                <li>
+                    <strong>Impedance:</strong>
+                    <span>22 Ohm</span>
+                </li>
+                <li>
+                    <strong>Plug Type:</strong>
+                    <span>3.5 mm</span>
+                </li>
+                <li>
+                    <strong>Magnet:</strong>
+                    <span>Neodymium</span>
+                </li>
+                <li>
+                    <strong>Sensitivity:</strong>
+                    <span>109dB@1mW</span>
+                </li>
+                <li>
+                    <strong>Isolation:</strong>
+                    <span>37dB</span>
+                </li>
+
+            </ul>
+        </section>
+        <section class="items">
+            <ul>
+                <li>
+                    <strong>Brand:</strong>
+                    <span>V-MODA</span>
+                </li>
+                <li>
+                    <strong>Model:</strong>
+                    <span></span>
+
+                </li>
+                <li>
+                    <strong>:</strong>
+                    <span>Price</span>
+
+                </li>
+                <li>
+                    <strong>Warranty:</strong>
+                    <span>1 Year</span>
+                </li>
+                <li>
+                    <strong>Bass Heavy:</strong>
+                    <span>No</span>
+                </li>
+                <li>
+                    <strong>Black foam:</strong>
+                    <span> S / M / L</span>
+
+                </li>
+                <li>
+                    <strong>Soft flex Sleeves:</strong>
+                    <span>S / M / L</span>
+
+                </li>
+                <li>
+                    <strong> Adaptar:</strong>
+                    <span>6.5 to 3.5mm</span>
+
+                </li>
+                <li>
+                    <strong>Type:</strong>
+                    <span>IEM</span>
+                </li>
+                <li>
+                    <strong>Cables Type:</strong>
+                    <span>Detachable</span>
+                </li>
+                <li>
+                    <strong>Quality:</strong>
+                    <span>Audiphiles</span>
+                </li>
+                <li>
+                    <strong>Oredr Now</strong>
+                    <span>
+                        <a href="https://www.headphonezone.in/collections/in-ear-monitors/products/shure-se425">Click here</a>
+                    </span>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <hr style="padding:3px;">
+    <div class="item_container">
+        <section class="items">
+            <img src="../root/Drawables/Images/RHA.png">
+        </section>
+        <section class="items">
+            <ul>
+
+                <strong>Brand:</strong>
+                <span>RHA</span>
+                </li>
+                <li>
+                    <strong>Model:</strong>
+                    <span>MA-650</span>
+
+                </li>
+                <li>
+                    <strong>Price:</strong>
+                    <span>4,999</span>
+
+                </li>
+                <li>
+                    <li>
+                        <strong> Headphone Design:</strong>
+                        <span>In-Ear</span>
+                    </li>
+                    <li>
+                        <strong>Driver Unit:</strong>
+                        <span>Custom Drivers</span>
+                    </li>
+                    <li>
+                        <strong>Microphone:</strong>
+                        <span>Yes</span>
+                    </li>
+                    <li>
+                        <strong>Frequency Response:</strong>
+                        <span>26Hz-40000Hz</span>
+                    </li>
+                    <li>
+                        <strong>Impedance:</strong>
+                        <span>16 Ohm</span>
+                    </li>
+                    <li>
+                        <strong>Plug Type:</strong>
+                        <span>3.5 mm Gold Plated</span>
+                    </li>
+                    <li>
+                        <strong>Magnet:</strong>
+                        <span>Neodymium</span>
+                    </li>
+                    <li>
+                        <strong>Sensitivity:</strong>
+                        <span>100dB@1mW</span>
+                    </li>
+                    <li>
+                        <strong>Isolation:</strong>
+                        <span>31dB</span>
+                    </li>
+
+            </ul>
+        </section>
+        <section class="items">
+            <ul>
+                <li>
+                    <strong>Warranty:</strong>
+                    <span>1 Year</span>
+                </li>
+                <li>
+                    <strong>Bass Heavy:</strong>
+                    <span>No</span>
+                </li>
+                <li>
+                    <strong>Black foam:</strong>
+                    <span> NA</span>
+
+                </li>
+                <li>
+                    <strong>Soft flex Sleeves:</strong>
+                    <span>S / M / L</span>
+
+                </li>
+                <li>
+                    <strong> Adaptar:</strong>
+                    <span> 3.5mm</span>
+
+                </li>
+                <li>
+                    <strong>Type:</strong>
+                    <span>Flat</span>
+                </li>
+                <li>
+                    <strong>Cables Type:</strong>
+                    <span>Tangle Free</span>
+                </li>
+                <li>
+                    <strong>Quality:</strong>
+                    <span>Regular Listning</span>
+                </li>
+                <li>
+                    <strong>Oredr Now</strong>
+                    <span>
+                        <a href="https://www.headphonezone.in/collections/in-ears/products/rha-ma650a">Click here</a>
+                    </span>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <hr style="padding:3px;">
+    <div class="item_container">
+        <section class="items">
+            <img src="../root/Drawables/Images/Vmoda.png">
+        </section>
+        <section class="items">
+            <ul>
+                <li>
+                    <strong>Brand:</strong>
+                    <span>V-MODA</span>
+                </li>
+                <li>
+                    <strong>Model:</strong>
+                    <span>Cross Fade 2 Wireless</span>
+
+                </li>
+                <li>
+                    <strong>Price:</strong>
+                    <span>24,900</span>
+
+                </li>
+                <li>
+                    <strong> Headphone Design:</strong>
+                    <span>Over-Ear</span>
+                </li>
+                <li>
+                    <strong>Driver Unit:</strong>
+                    <span>50mm</span>
+                </li>
+                <li>
+                    <strong>Microphone:</strong>
+                    <span>Yes</span>
+                </li>
+                <li>
+                    <strong>Frequency Response:</strong>
+                    <span>50Hz-40000Hz</span>
+                </li>
+                <li>
+                    <strong>Impedance:</strong>
+                    <span>32 Ohm</span>
+                </li>
+                <li>
+                    <strong>Plug Type:</strong>
+                    <span>3.5 mm Gold Plated</span>
+                </li>
+                <li>
+                    <strong>Magnet:</strong>
+                    <span>Neodymium</span>
+                </li>
+                <li>
+                    <strong>Bluetooth Version:</strong>
+                    <span>4.1</span>
+                </li>
+                <li>
+                    <strong>Battry:</strong>
+                    <span>14Hours (Play)</span>
+                </li>
+
+            </ul>
+        </section>
+        <section class="items">
+            <ul>
+                <li>
+                    <strong>Warranty:</strong>
+                    <span>1 Year</span>
+                </li>
+                <li>
+                    <strong>Wire less:</strong>
+                    <span>Yes</span>
+                </li>
+                <li>
+                    <strong>Black foam:</strong>
+                    <span> Yes</span>
+
+                </li>
+                <li>
+                    <strong>Soft flex Sleeves:</strong>
+                    <span>NA</span>
+
+                </li>
+                <li>
+                    <strong> Adaptar:</strong>
+                    <span> 3.5mm</span>
+
+                </li>
+                <li>
+                    <strong>Type:</strong>
+                    <span>Flat</span>
+                </li>
+                <li>
+                    <strong>Cables Type:</strong>
+                    <span>Tangle Free</span>
+                </li>
+                <li>
+                    <strong>Quality:</strong>
+                    <span>Audiophile</span>
+                </li>
+                <li>
+                    <strong>Oredr Now</strong>
+                    <span>
+                        <a href="https://www.headphonezone.in/collections/wireless-bluetooth-headphones/products/v-moda-crossfade-2-wireless">Click
+                            here</a>
+                    </span>
+                </li>
+            </ul>
+        </section>
+    </div>
+</body>
+
 </html>
