@@ -62,7 +62,7 @@ h3, .below_view ul {
 }
 .The_drop_down {
   display: none;
-  height: 100vh;
+  height: 96vh;
   width: 100vw;
   background-color: #9B4643;
   border-radius: 20px;
