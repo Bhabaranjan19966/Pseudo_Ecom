@@ -1,1224 +1,1175 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <title>Pseudo Ecom</title>
     <meta charset="utf-8" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="./Script_Files/Functionality.js"></script>
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Basic|Crimson+Text|Exo+2|Fjalla+One|Lobster|Pacifico|Quicksand" rel="stylesheet">
-    <link rel="stylesheet" href="./files_CSS/list_items.css">
+    <link href="https://fonts.googleapis.com/css?family=Basic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="./files_CSS/Main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./Script_Files/Functionality.js"></script>
 </head>
 
 <body>
     <header class="header_style">
+        <!-- The header Slider will activate for smaller screen -->
         <div class="header_slider" onclick="theEnableFunction('slider')">
             <hr class="header_slider_inside" />
             <hr class="header_slider_inside" />
             <hr class="header_slider_inside" />
         </div>
-        <a href="#home"> <img src="./Drawables/Images/logo.png"></a>
-        <section class="header_section">
-            <a href="#mobiles" style="color:white; text-decoration: none;"> Mobiles</a>
-        </section>
-        <section class="header_section">
-            <a href="#Tv" style="color:white; text-decoration: none;"> Smart-Tv</a>
-        </section>
-        <section class="header_section">
-            <a href="#E-phones" style="color:white; text-decoration: none;"> Earphones</a>
-        </section>
-        <section class="header_section">
-            <a href="#About_us" style="color:white; text-decoration: none;"> About Us</a>
-        </section>
+        <a href="#home"> <img src="./Drawables/Images/logo.png" alt="logo"></a>
+        <div class="header_section">
+            <a href="#mobiles"> Mobiles</a>
+        </div>
+        <div class="header_section">
+            <a href="#Tv"> Smart-Tv</a>
+        </div>
+        <div class="header_section">
+            <a href="#E-phones"> Earphones</a>
+        </div>
+        <div class="header_section">
+            <a href="#About_us"> About Us</a>
+        </div>
     </header>
-    <section class="The_drop_down" id="slider">
-        <section class="The_drop_down_sections">
-            <a href="#mobiles" style="color:white; text-decoration: none;" onclick="theEnableFunction('slider')"> Mobiles</a>
-        </section>
-        <section class="The_drop_down_sections">
-            <a href="#Tv" style="color:white; text-decoration: none;" onclick="theEnableFunction('slider')"> Smart-Tv</a>
-        </section>
-        <section class="The_drop_down_sections">
-            <a href="#E-phones" style="color:white; text-decoration: none;" onclick="theEnableFunction('slider')"> Earphones</a>
-        </section>
-        <section class="The_drop_down_sections">
-            <a href="#About_us" style="color:white; text-decoration: none;" onclick="theEnableFunction('slider')"> About
-                Us
+    <!-- slider The drop down -->
+    <div class="The_drop_down" id="slider">
+        <div class="The_drop_down_sections">
+            <a href="#mobiles" onclick="theEnableFunction('slider')"> Mobiles</a>
+        </div>
+        <div class="The_drop_down_sections">
+            <a href="#Tv" onclick="theEnableFunction('slider')"> Smart-Tv</a>
+        </div>
+        <div class="The_drop_down_sections">
+            <a href="#E-phones" onclick="theEnableFunction('slider')"> Earphones</a>
+        </div>
+        <div class="The_drop_down_sections">
+            <a href="#About_us" onclick="theEnableFunction('slider')"> About Us
             </a>
-        </section>
-    </section>
+        </div>
+    </div>
     <div class="div1" id="home">
-        <section class="div1_content_section">
+        <div class="div1_content_section">
             <h1 style="color:white;font-size:10vw;"> Shopio</h1>
-        </section>
-        <section class="div1_content_section" id="hero_bleow_section">
-            <section class="below_view">
-                <h1>
-                    <ul>
-                        <li> Awsome Deals Everyday !! </li>
-                    </ul>
-                </h1>
-            </section>
-            <section class="below_view">
-                <h1>
-                    <ul>
-                        <li> Apply Coupon: 10%ONTOP </li>
-                    </ul>
-                </h1>
-            </section>
-            <section class="below_view">
-                <h1>
-                    <ul>
-                        <li> Get your Best Deal !!</li>
-                    </ul>
-                </h1>
-            </section>
-        </section>
+        </div>
+        <div class="div1_content_section" id="hero_bleow_section">
+            <div class="below_view">
+                <ul>
+                    <li>
+                        <h3>Awsome Deals Everyday !! </h3>
+                    </li>
+                </ul>
+            </div>
+            <div class="below_view">
+                <ul>
+                    <li>
+                        <h3>Apply Coupon: 10%ONTOP</h3>
+                    </li>
+                </ul>
+            </div>
+            <div class="below_view">
+                <ul>
+                    <li>
+                        <h3>Get your Best Deal !!</h3>
+                    </li>
+                </ul>
+            </div>
+        </div>
         <div class="div1_activate_on_shrink">
             <h1>Apply Coupon: 10%ONTOP</h1>
         </div>
-
     </div>
-    <section class="about_us" id="About_us">
-        <section class="about_us_section_top"> About Us</section>
-        <section class="about_us_info_container">
+    <!-- the about_us section -->
+    <div class="about_us" id="About_us">
+        <div class="about_us_section_top"> About Us</div>
+        <div class="about_us_info_container">
             <span>We DO NOT sell products.</span>
             <span>Our team Generates Coupon.</span>
             <span>SHOPIO Coupon will apply on trusted B2C platforms.</span>
             <span>New Trending Items Everyday on Shopio.</span>
             <span>Apply SHOPIO COUPON on the links mentioned.</span>
-            <span>Want to know how we work.. <a href="#dd" style="color:white; text-decoration: none;"> Click Here</a></span>
+            <span>Want to know how we work.. <a href="#dd"> Click Here</a></span>
             <span>Happy Shopping !!</span>
-        </section>
-
-    </section>
-
+        </div>
+    </div>
+    <!-- Products -->
     <div class="item_container" id="mobiles">
-        <section class="items">
-            <img src="../root/Drawables/Images/mob1.jpg">
-        </section>
-
-        <section class="items">
-
+        <div class="items">
+            <img src="../root/Drawables/Images/mob1.jpg" alt="mobiles">
+        </div>
+        <div class="items">
             <ul>
                 <li>
-                    <strong>Model</strong>
+                    <b>Model</b>
                     <span>Samsung Galaxy On Nxt 64GB</span>
                 </li>
                 <li>
-                    <strong>Shipping:</strong>
+                    <b>Shipping:</b>
                     <span>Free</span>
                 </li>
                 <li>
-                    <strong>Delivery:</strong>
+                    <b>Delivery:</b>
                     <span> 2-7 working Days</span>
                 </li>
                 <li>
-                    <strong>Price: </strong>
+                    <b>Price: </b>
                     <span> Rs.10,000</span>
                 </li>
                 <li>
-                    <strong>Screen Size :</strong>
+                    <b>Screen Size :</b>
                     <span>5.5 inch</span>
                 </li>
                 <li>
-                    <strong>Screen Resolution:</strong>
+                    <b>Screen Resolution:</b>
                     <span> 1920 x 1080 pixels</span>
                 </li>
                 <li>
-                    <strong>Screen Type:</strong>
+                    <b>Screen Type:</b>
                     <span> PLS</span>
                 </li>
                 <li>
-                    <strong>Pixel Density:</strong>
+                    <b>Pixel Density:</b>
                     <span> 401 PPI</span>
                 </li>
                 <li>
-                    <strong>Screen Protection:</strong>
+                    <b>Screen Protection:</b>
                     <span> Corning Gorilla Glas</span>
                 </li>
                 <li>
-                    <strong>Bezel Less :</strong>
+                    <b>Bezel Less :</b>
                     <span>No</span>
                 </li>
                 <li>
-                    <strong>Internal Storag</strong>
+                    <b>Internal Storag</b>
                     <span>64 GB</span>
                 </li>
                 <li>
-                    <strong>RAM</strong>
+                    <b>RAM</b>
                     <span>3 GB</span>
                 </li>
                 <li>
-                    <strong>Expandable Storage</strong>
+                    <b>Expandable Storage</b>
                     <span>256 GB</span>
                 </li>
                 <li>
-                    <strong>Supported Memory Card Type</strong>
+                    <b>Supported Memory Card Type</b>
                     <span>MicroSD</span>
                 </li>
                 <li>
-                    <strong> Memory Card Slot Type</strong>
+                    <b> Memory Card Slot Type</b>
                     <span>Dedicated Slot</span>
                 </li>
-                <li> <strong>Primary Camera Available</strong>
+                <li> <b>Primary Camera Available</b>
                     <span>Yes</span>
                 </li>
-                <li> <strong>Full HD Recording</strong>
+                <li> <b>Full HD Recording</b>
                     <span> Yes </span>
                 </li>
-                <li> <strong>Primary Camera</strong>
+                <li> <b>Primary Camera</b>
                     <span>13 MP</span>
                 </li>
-
             </ul>
-
-        </section>
-
-        <section class="items">
+        </div>
+        <div class="items">
             <ul>
-
                 <li>
-                    <strong>Android</strong>
+                    <b>Android</b>
                     <span>6.0.1</span>
                 </li>
                 <li>
-                    <strong>Micro USB Version</strong>
+                    <b>Micro USB Version</b>
                     <span>2.0</span>
                 </li>
                 <li>
-                    <strong>Bluetooth Version</strong>
+                    <b>Bluetooth Version</b>
                     <span>v4.1</span>
                 </li>
                 <li>
-                    <strong>Battery Capacity</strong>
+                    <b>Battery Capacity</b>
                     <span>3300 mAh</span>
                 </li>
                 <li>
-                    <strong>Warranty</strong>
+                    <b>Warranty</b>
                     <span>Brand Warranty of 1 Year</span>
                 </li>
-
                 <li>
-                    <strong>HD Recording</strong>
+                    <b>HD Recording</b>
                     <span>Yes</span>
                 </li>
-                <li> <strong>Network Type</strong>
+                <li> <b>Network Type</b>
                     <span> 4G,2G,3G</span>
                 </li>
-                <li> <strong>Supported Networks</strong>
+                <li> <b>Supported Networks</b>
                     <span> 4G, 3G , 2G</span>
                 </li>
-                <li> <strong>Internet Connectivity</strong>
+                <li> <b>Internet Connectivity</b>
                     <span> 4G , 3G , Wi-Fi</span>
                 </li>
-                <li> <strong>3G Speed</strong>
+                <li> <b>3G Speed</b>
                     <span>HSPA+32Mbps</span>
                 </li>
-                <li> <strong>Bluetooth Support</strong>
+                <li> <b>Bluetooth Support</b>
                     <span>Yes</span>
                 </li>
                 <li>
-                    <strong>Brand: </strong>
+                    <b>Brand: </b>
                     <span>Samsung Exynos</span>
                 </li>
                 <li>
-                    <strong>Processor Speed: </strong>
+                    <b>Processor Speed: </b>
                     <span>1.6GHz </span>
                 </li>
                 <li>
-                    <strong>Chip:</strong>
+                    <b>Chip:</b>
                     <span>Exynos 7870</span>
                 </li>
                 <li>
-                    <strong>Processor: </strong>
+                    <b>Processor: </b>
                     <span>Type Octa-Core</span>
                 </li>
                 <li>
-                    <strong>RAM: </strong>
+                    <b>RAM: </b>
                     <span>3GB</span>
                 </li>
                 <li>
-                    <strong>Graphics: </strong>
+                    <b>Graphics: </b>
                     <span>Mali-T830</span>
                 </li>
                 <li>
-                    <strong>Order Now:</strong>
+                    <b>Order Now:</b>
                     <span><a href="https://www.flipkart.com/samsung-galaxy-nxt-gold-64-gb/p/itmet6rhmfzdtrht?pid=MOBET6RH4XSXKM7D&srno=s_1_1&otracker=search&lid=LSTMOBET6RH4XSXKM7D5I3RAP&fm=SEARCH&iid=39665736-d5a6-45c6-b78d-3abe260f6605.MOBET6RH4XSXKM7D.SEARCH&ppt=Homepage&ppn=Homepage&ssid=4okhzroc9s0000001535390660403&qH=c52dc038d251ba45">
                             Click Here</a></span>
                 </li>
             </ul>
-
-        </section>
-
+        </div>
     </div>
     <hr style="padding:3px;">
     <div class="item_container">
-        <section class="items">
-            <img src="../root/Drawables/Images/Iphone_X.png">
-
-        </section>
-
-        <section class="items">
-
+        <div class="items">
+            <img src="../root/Drawables/Images/Iphone_X.png" alt="iphone">
+        </div>
+        <div class="items">
             <ul>
                 <li>
-                    <strong>Model</strong>
+                    <b>Model</b>
                     <span>Apple iphone X</span>
                 </li>
                 <li>
-                    <strong>Shipping:</strong>
+                    <b>Shipping:</b>
                     <span>Free</span>
                 </li>
                 <li>
-                    <strong>Delivery:</strong>
+                    <b>Delivery:</b>
                     <span> 2-4 working Days</span>
                 </li>
                 <li>
-                    <strong>Price: </strong>
+                    <b>Price: </b>
                     <span> Rs. 70,000</span>
                 </li>
                 <li>
-                    <strong>Color :</strong>
+                    <b>Color :</b>
                     <span>5.5 inch</span>
                 </li>
                 <li>
-                    <strong>Space Gray:</strong>
+                    <b>Space Gray:</b>
                     <span> Browse Type</span>
                 </li>
                 <li>
-                    <strong>Type:</strong>
+                    <b>Type:</b>
                     <span> Type</span>
                 </li>
                 <li>
-                    <strong>Sim Type:</strong>
+                    <b>Sim Type:</b>
                     <span> Single</span>
                 </li>
                 <li>
-                    <strong>Touch Screen:</strong>
+                    <b>Touch Screen:</b>
                     <span>Yes</span>
                 </li>
                 <li>
-                    <strong>Bezel Less :</strong>
+                    <b>Bezel Less :</b>
                     <span>Yes</span>
                 </li>
                 <li>
-                    <strong>Internal Storag</strong>
+                    <b>Internal Storag</b>
                     <span>64 GB</span>
                 </li>
                 <li>
-                    <strong>RAM</strong>
+                    <b>RAM</b>
                     <span>3 GB</span>
                 </li>
                 <li>
-                    <strong>Expandable Storage</strong>
+                    <b>Expandable Storage</b>
                     <span>NA</span>
                 </li>
                 <li>
-                    <strong>Supported Memory Card Type</strong>
+                    <b>Supported Memory Card Type</b>
                     <span>NA</span>
                 </li>
                 <li>
-                    <strong> Memory Card Slot Type</strong>
+                    <b> Memory Card Slot Type</b>
                     <span>NA</span>
                 </li>
-                <li> <strong>Primary Camera Available</strong>
+                <li> <b>Primary Camera Available</b>
                     <span>Yes</span>
                 </li>
-                <li> <strong>Full HD Recording</strong>
+                <li> <b>Full HD Recording</b>
                     <span> Yes </span>
                 </li>
-                <li> <strong>Primary Camera</strong>
+                <li> <b>Primary Camera</b>
                     <span>12+12 MP</span>
                 </li>
                 <li>
-                    <strong>OS</strong>
+                    <b>OS</b>
                     <span>IOS 11</span>
                 </li>
-
             </ul>
-        </section>
-        <section class="items">
+        </div>
+        <div class="items">
             <ul>
                 <li>
-                    <strong>Micro USB Version</strong>
+                    <b>Micro USB Version</b>
                     <span>Type C</span>
                 </li>
                 <li>
-                    <strong>Bluetooth Version</strong>
+                    <b>Bluetooth Version</b>
                     <span>NA</span>
                 </li>
                 <li>
-                    <strong>Battery Capacity</strong>
+                    <b>Battery Capacity</b>
                     <span>3300 mAh</span>
                 </li>
                 <li>
-                    <strong>Warranty</strong>
+                    <b>Warranty</b>
                     <span>Brand Warranty of 1 Year</span>
                 </li>
-
                 <li>
-                    <strong>HD Recording</strong>
+                    <b>HD Recording</b>
                     <span>Yes</span>
                 </li>
-                <li> <strong>Network Type</strong>
+                <li> <b>Network Type</b>
                     <span> 4G,2G,3G</span>
                 </li>
-                <li> <strong>Supported Networks</strong>
+                <li> <b>Supported Networks</b>
                     <span> 4G, 3G , 2G</span>
                 </li>
-                <li> <strong>Internet Connectivity</strong>
+                <li> <b>Internet Connectivity</b>
                     <span> 4G , 3G , Wi-Fi</span>
                 </li>
-                <li> <strong>3G Speed</strong>
+                <li> <b>3G Speed</b>
                     <span>HSPA+32Mbps</span>
                 </li>
-                <li> <strong>Bluetooth Support</strong>
+                <li> <b>Bluetooth Support</b>
                     <span>NO</span>
                 </li>
                 <li>
-                    <strong>Processor Type: </strong>
+                    <b>Processor Type: </b>
                     <span>
                         A11 Bionic Chip 64-bit</span>
                 </li>
                 <li>
-                    <strong>Processor Speed: </strong>
+                    <b>Processor Speed: </b>
                     <span>2.1GHz </span>
                 </li>
                 <li>
-                    <strong>Chip:</strong>
+                    <b>Chip:</b>
                     <span> A11 Bionic Chip</span>
                 </li>
                 <li>
-                    <strong>Processor: </strong>
+                    <b>Processor: </b>
                     <span>Type Octa-Core</span>
                 </li>
                 <li>
-                    <strong>RAM: </strong>
+                    <b>RAM: </b>
                     <span>3GB</span>
                 </li>
                 <li>
-                    <strong>Graphics PPI: </strong>
+                    <b>Graphics PPI: </b>
                     <span>455 PPI</span>
                 </li>
                 <li>
-                    <strong>Order Now:</strong>
+                    <b>Order Now:</b>
                     <span><a href="https://www.flipkart.com/apple-iphone-x-space-gray-64-gb/p/itmexrgv6hctyrav?pid=MOBEXRGVCMGVCGGQ&srno=b_1_1&otracker=browse&lid=LSTMOBEXRGVCMGVCGGQFLD1LA&fm=organic&iid=7cd5cd49-6bb8-40b0-ba0e-821c9d255ee4.MOBEXRGVCMGVCGGQ.SEARCH">
                             Click Here</a></span>
                 </li>
             </ul>
-
-        </section>
-
+        </div>
     </div>
     <hr style=" padding:3px" />
     <div class="item_container">
-        <section class="items">
-            <img src="../root/Drawables/Images/one_plush.png">
-
-        </section>
-
-        <section class="items">
-
+        <div class="items">
+            <img src="../root/Drawables/Images/one_plush.png" alt="one_plush">
+        </div>
+        <div class="items">
             <ul>
                 <li>
-                    <strong>Model</strong>
+                    <b>Model</b>
                     <span> OnePlus 6</span>
                 </li>
                 <li>
-                    <strong>Shipping:</strong>
+                    <b>Shipping:</b>
                     <span>Free</span>
                 </li>
                 <li>
-                    <strong>Delivery:</strong>
+                    <b>Delivery:</b>
                     <span> 2-7 working Days</span>
                 </li>
                 <li>
-                    <strong>Price: </strong>
+                    <b>Price: </b>
                     <span> Rs.34,000</span>
                 </li>
                 <li>
-                    <strong>Screen Size :</strong>
+                    <b>Screen Size :</b>
                     <span> 6.28 inch</span>
                 </li>
                 <li>
-                    <strong>Screen Resolution:</strong>
+                    <b>Screen Resolution:</b>
                     <span> 2280 x 1080 pixels</span>
                 </li>
                 <li>
-                    <strong>Screen Type:</strong>
+                    <b>Screen Type:</b>
                     <span> PLS</span>
                 </li>
                 <li>
-                    <strong>Pixel Density:</strong>
+                    <b>Pixel Density:</b>
                     <span> 441 PPI</span>
                 </li>
                 <li>
-                    <strong>Screen Protection:</strong>
+                    <b>Screen Protection:</b>
                     <span> Corning Gorilla Glas</span>
                 </li>
                 <li>
-                    <strong>Bezel Less :</strong>
+                    <b>Bezel Less :</b>
                     <span>Yes</span>
                 </li>
                 <li>
-                    <strong>Internal Storag</strong>
+                    <b>Internal Storag</b>
                     <span>64 GB</span>
                 </li>
                 <li>
-                    <strong>RAM</strong>
+                    <b>RAM</b>
                     <span>6 GB</span>
                 </li>
                 <li>
-                    <strong>Expandable Storage</strong>
+                    <b>Expandable Storage</b>
                     <span>NA</span>
                 </li>
                 <li>
-                    <strong>Supported Memory Card Type</strong>
+                    <b>Supported Memory Card Type</b>
                     <span>NA</span>
                 </li>
                 <li>
-                    <strong> Memory Card Slot Type</strong>
+                    <b> Memory Card Slot Type</b>
                     <span>NA</span>
                 </li>
-                <li> <strong>Primary Camera Available</strong>
+                <li> <b>Primary Camera Available</b>
                     <span>Yes </span>
                 </li>
-                <li> <strong>Full HD Recording</strong>
+                <li> <b>Full HD Recording</b>
                     <span> Yes </span>
                 </li>
-                <li> <strong>Primary Camera</strong>
+                <li> <b>Primary Camera</b>
                     <span>20 MP+16 MP</span>
                 </li>
-
             </ul>
-
-        </section>
-
-        <section class="items">
+        </div>
+        <div class="items">
             <ul>
-
                 <li>
-                    <strong>Android</strong>
+                    <b>Android</b>
                     <span> 8.1</span>
                 </li>
                 <li>
-                    <strong>Micro USB Version</strong>
+                    <b>Micro USB Version</b>
                     <span> Type C</span>
                 </li>
                 <li>
-                    <strong>Bluetooth Version</strong>
+                    <b>Bluetooth Version</b>
                     <span>v4.1</span>
                 </li>
                 <li>
-                    <strong>Battery Capacity</strong>
+                    <b>Battery Capacity</b>
                     <span>3300 mAh</span>
                 </li>
                 <li>
-                    <strong>Warranty</strong>
+                    <b>Warranty</b>
                     <span>Brand Warranty of 1 Year</span>
                 </li>
-
                 <li>
-                    <strong>HD Recording</strong>
+                    <b>HD Recording</b>
                     <span>Yes</span>
                 </li>
-                <li> <strong>Network Type</strong>
+                <li> <b>Network Type</b>
                     <span> 4G,2G,3G</span>
                 </li>
-                <li> <strong>Supported Networks</strong>
+                <li> <b>Supported Networks</b>
                     <span> 4G, 3G , 2G</span>
                 </li>
-                <li> <strong>Internet Connectivity</strong>
+                <li> <b>Internet Connectivity</b>
                     <span> 4G , 3G , Wi-Fi</span>
                 </li>
-                <li> <strong>3G Speed</strong>
+                <li> <b>3G Speed</b>
                     <span>HSPA+32Mbps</span>
                 </li>
-                <li> <strong>Bluetooth Support</strong>
+                <li> <b>Bluetooth Support</b>
                     <span>Yes</span>
                 </li>
                 <li>
-                    <strong>chip Brand: </strong>
+                    <b>chip Brand: </b>
                     <span>SnapDragon 845</span>
                 </li>
                 <li>
-                    <strong>Processor Speed: </strong>
+                    <b>Processor Speed: </b>
                     <span>2Gzh </span>
                 </li>
                 <li>
-                    <strong>Chip:</strong>
+                    <b>Chip:</b>
                     <span>Qualcomm SnapDragon 845</span>
                 </li>
                 <li>
-                    <strong>Processor: </strong>
+                    <b>Processor: </b>
                     <span>Type Octa-Core</span>
                 </li>
                 <li>
-                    <strong>RAM: </strong>
+                    <b>RAM: </b>
                     <span>6 GB</span>
                 </li>
                 <li>
-                    <strong>Graphics: </strong>
+                    <b>Graphics: </b>
                     <span>Mali-T830</span>
                 </li>
                 <li>
-                    <strong>Order Now:</strong>
+                    <b>Order Now:</b>
                     <span><a href="https://www.amazon.in/OnePlus-Mirror-Black-64GB-Memory/dp/B0756Z43QS/ref=sr_1_1?s=electronics&ie=UTF8&qid=1535390953&sr=1-1&keywords=one+plus+6+phone+64+gb+mobile">
                             Click Here</a></span>
                 </li>
             </ul>
-
-        </section>
-
-
+        </div>
     </div>
     <hr style=" padding:3px" />
     <div class="item_container" id="Tv">
-        <section class="items">
-            <img src="../root/Drawables/Images/Panasonic_FX730.png">
-
-        </section>
-
-        <section class="items">
-
+        <div class="items">
+            <img src="../root/Drawables/Images/Panasonic_FX730.png" alt="Panasonic">
+        </div>
+        <div class="items">
             <ul>
                 <li>
-                    <strong>Model</strong>
+                    <b>Model</b>
                     <span> Panasonic FX730 Series 123cm (49 inch) Ultra HD (4K) LED Smart TV (TH-49FX730D)</span>
                 </li>
                 <li>
-                    <strong>Price</strong>
+                    <b>Price</b>
                     <span>Rs.84,990</span>
                 </li>
                 <li>
-                    <strong>Shipping:</strong>
+                    <b>Shipping:</b>
                     <span>Free</span>
                 </li>
                 <li>
-                    <strong>Delivery:</strong>
+                    <b>Delivery:</b>
                     <span> 2-7 working Days</span>
                 </li>
                 <li>
-                    <strong>Model: </strong>
+                    <b>Model: </b>
                     <span> TH-49FX730D</span>
                 </li>
                 <li>
-                    <strong>Screen Size :</strong>
+                    <b>Screen Size :</b>
                     <span> 6.28 inch</span>
                 </li>
                 <li>
-                    <strong>Display Size</strong>
+                    <b>Display Size</b>
                     <span>123 cm (49)</span>
                 </li>
                 <li>
-                    <strong>Screen Type:</strong>
+                    <b>Screen Type:</b>
                     <span> LED</span>
                 </li>
                 <li>
-                    <strong>HD Technology & Resolution</strong>
+                    <b>HD Technology & Resolution</b>
                     <span> Ultra HD (4K), 3840 x 2160</span>
                 </li>
                 <li>
-                    <strong>Curve TV:</strong>
+                    <b>Curve TV:</b>
                     <span> No</span>
                 </li>
                 <li>
-                    <strong>Touchscreen :</strong>
+                    <b>Touchscreen :</b>
                     <span>No</span>
                 </li>
                 <li>
-                    <strong>HDMI</strong>
+                    <b>HDMI</b>
                     <span> 3 </span>
                 </li>
-
-
             </ul>
-
-        </section>
-
-        <section class="items">
+        </div>
+        <div class="items">
             <ul>
                 <li>
-                    <strong>USB</strong>
+                    <b>USB</b>
                     <span>3</span>
                 </li>
                 <li>
-                    <strong>Width x Height x Depth (without stand)</strong>
+                    <b>Width x Height x Depth (without stand)</b>
                     <span> 1106 mm x 644 mm x 78 mm</span>
                 </li>
                 <li>
-                    <strong>Weight (without stand)</strong>
+                    <b>Weight (without stand)</b>
                     <span> 13.5 kg</span>
                 </li>
                 <li>
-                    <strong>Width x Height x Depth (with stand)</strong>
+                    <b>Width x Height x Depth (with stand)</b>
                     <span>1106 mm x 699 mm x 232 mm</span>
                 </li>
                 <li>
-                    <strong>Weight (with stand)</strong>
+                    <b>Weight (with stand)</b>
                     <span>14 kg</span>
                 </li>
                 <li>
-                    <strong>Stand Features</strong>
+                    <b>Stand Features</b>
                     <span>Wall Mount Included</span>
                 </li>
-
                 <li>
-                    <strong>Warranty Summary</strong>
+                    <b>Warranty Summary</b>
                     <span>1 Year Warranty</span>
                 </li>
-                <li> <strong>Covered in Warranty</strong>
+                <li> <b>Covered in Warranty</b>
                     <span> Technical Failure</span>
                 </li>
-                <li> <strong>Not Covered in Warranty</strong>
+                <li> <b>Not Covered in Warranty</b>
                     <span>Physical, Liquid Damages</span>
                 </li>
-                <li> <strong>Speaker Output RMS</strong>
+                <li> <b>Speaker Output RMS</b>
                     <span> 20 W</span>
                     <li>
-                        <strong>Order Now:</strong>
+                        <b>Order Now:</b>
                         <span><a href="https://www.flipkart.com/panasonic-fx730-series-123cm-49-inch-ultra-hd-4k-led-smart-tv/p/itmf6mfge2ntyqy8?pid=TVSF6MFGJH4NATA5&lid=LSTTVSF6MFGJH4NATA5TL2PQR&marketplace=FLIPKART&srno=s_1_1&otracker=search&fm=SEARCH&iid=88555617-752e-4532-9dd0-732e98d94c5f.TVSF6MFGJH4NATA5.SEARCH&ppt=SearchPage&ppn=Search&ssid=0ludp2xie80000001535432898218&qH=e5ce42320a5dd9ab">
                                 Click Here</a></span>
                     </li>
             </ul>
-        </section>
+        </div>
     </div>
     <hr style="padding:3px;">
     <div class="item_container">
-        <section class="items">
-            <img src="../root/Drawables/Images/Lg_OLED.png">
-        </section>
-        <section class="items">
+        <div class="items">
+            <img src="../root/Drawables/Images/Lg_OLED.png" alt="lg">
+        </div>
+        <div class="items">
             <ul>
                 <li>
-                    <strong>Model</strong>
+                    <b>Model</b>
                     <span> LG 164cm (65 inch) Ultra HD (4K) OLED Smart TV (OLED65B7T)</span>
                 </li>
                 <li>
-                    <strong>Price</strong>
+                    <b>Price</b>
                     <span>Rs.2,87,000</span>
                 </li>
                 <li>
-                    <strong>Shipping:</strong>
+                    <b>Shipping:</b>
                     <span>Free</span>
                 </li>
                 <li>
-                    <strong>Delivery:</strong>
+                    <b>Delivery:</b>
                     <span> 2-7 working Days</span>
                 </li>
                 <li>
-                    <strong>Model: </strong>
+                    <b>Model: </b>
                     <span> OLED65B7T</span>
                 </li>
                 <li>
-                    <strong>Screen Size :</strong>
+                    <b>Screen Size :</b>
                     <span> 6.28 inch</span>
                 </li>
                 <li>
-                    <strong>Display Size</strong>
+                    <b>Display Size</b>
                     <span>164 cm (65)</span>
                 </li>
                 <li>
-                    <strong>Screen Type:</strong>
+                    <b>Screen Type:</b>
                     <span>OLED</span>
                 </li>
                 <li>
-                    <strong>HD Technology & Resolution</strong>
+                    <b>HD Technology & Resolution</b>
                     <span> Ultra HD (4K), 3840 x 2160</span>
                 </li>
                 <li>
-                    <strong>Curve TV:</strong>
+                    <b>Curve TV:</b>
                     <span> No</span>
                 </li>
                 <li>
-                    <strong>Touchscreen :</strong>
+                    <b>Touchscreen :</b>
                     <span>No</span>
                 </li>
                 <li>
-                    <strong>HDMI</strong>
+                    <b>HDMI</b>
                     <span> 2 </span>
                 </li>
             </ul>
-        </section>
-        <section class="items">
+        </div>
+        <div class="items">
             <ul>
                 <li>
-                    <strong>USB</strong>
+                    <b>USB</b>
                     <span>2</span>
                 </li>
                 <li>
-                    <strong>Width x Height x Depth (without stand)</strong>
+                    <b>Width x Height x Depth (without stand)</b>
                     <span> 1106 mm x 644 mm x 78 mm</span>
                 </li>
                 <li>
-                    <strong>Weight (without stand)</strong>
+                    <b>Weight (without stand)</b>
                     <span> 13.5 kg</span>
                 </li>
                 <li>
-                    <strong>Width x Height x Depth (with stand)</strong>
+                    <b>Width x Height x Depth (with stand)</b>
                     <span>1461 mm x 56.7 mm</span>
                 </li>
                 <li>
-                    <strong>Weight (with stand)</strong>
+                    <b>Weight (with stand)</b>
                     <span>14 kg</span>
                 </li>
                 <li>
-                    <strong>Stand Features</strong>
+                    <b>Stand Features</b>
                     <span>No Wall Mount</span>
                 </li>
                 <li>
-                    <strong>Warranty Summary</strong>
+                    <b>Warranty Summary</b>
                     <span>1 Year Warranty</span>
                 </li>
-                <li> <strong>Covered in Warranty</strong>
+                <li> <b>Covered in Warranty</b>
                     <span> Technical Failure</span>
                 </li>
-                <li> <strong>Not Covered in Warranty</strong>
+                <li> <b>Not Covered in Warranty</b>
                     <span>Physical, Liquid Damages</span>
                 </li>
-                <li> <strong>Speaker Output RMS</strong>
+                <li> <b>Speaker Output RMS</b>
                     <span> 27 W</span>
                     <li>
-                        <strong>Order Now:</strong>
+                        <b>Order Now:</b>
                         <span><a href="https://www.flipkart.com/lg-164cm-65-inch-ultra-hd-4k-oled-smart-tv/p/itmf3h7bhhzber7e?pid=TVSEURNCMJ7FT4A5&lid=LSTTVSEURNCMJ7FT4A5PYSNMU&marketplace=FLIPKART&srno=s_1_1&otracker=search&fm=SEARCH&iid=deb0d40d-ba93-486e-9bc0-6ad1fa8a4aae.TVSEURNCMJ7FT4A5.SEARCH&ppt=SearchPage&ppn=Search&ssid=66wu4a3zeo0000001535435400068&qH=cb7f125531507f0f">
                                 Click Here</a></span>
                     </li>
             </ul>
-        </section>
+        </div>
     </div>
     <hr style="padding:3px;">
     <div class="item_container">
-        <section class="items">
-            <img src="../root/Drawables/Images/Sony_led.png">
-        </section>
-        <section class="items">
+        <div class="items">
+            <img src="../root/Drawables/Images/Sony_led.png" alt="Sony_led">
+        </div>
+        <div class="items">
             <ul>
                 <li>
-                    <strong>Model</strong>
+                    <b>Model</b>
                     <span> Sony 138.8cm (55 inch) Ultra HD (4K) LED Smart TV (KD-55X8500F)</span>
                 </li>
                 <li>
-                    <strong>Price</strong>
+                    <b>Price</b>
                     <span>Rs.1,17,000</span>
                 </li>
                 <li>
-                    <strong>Shipping:</strong>
+                    <b>Shipping:</b>
                     <span>Free</span>
                 </li>
                 <li>
-                    <strong>Delivery:</strong>
+                    <b>Delivery:</b>
                     <span> 2-7 working Days</span>
                 </li>
                 <li>
-                    <strong>Model: </strong>
+                    <b>Model: </b>
                     <span>KD-55X8500F</span>
                 </li>
                 <li>
-                    <strong>Screen Size :</strong>
+                    <b>Screen Size :</b>
                     <span> 6.28 inch</span>
                 </li>
                 <li>
-                    <strong>Display Size</strong>
+                    <b>Display Size</b>
                     <span>164 cm (65)</span>
                 </li>
                 <li>
-                    <strong>Screen Type:</strong>
+                    <b>Screen Type:</b>
                     <span>OLED</span>
                 </li>
                 <li>
-                    <strong>HD Technology & Resolution</strong>
+                    <b>HD Technology & Resolution</b>
                     <span> Ultra HD (4K), 3840 x 2160</span>
                 </li>
                 <li>
-                    <strong>Curve TV:</strong>
+                    <b>Curve TV:</b>
                     <span> No</span>
                 </li>
                 <li>
-                    <strong>Touchscreen :</strong>
+                    <b>Touchscreen :</b>
                     <span>No</span>
                 </li>
                 <li>
-                    <strong>HDMI</strong>
+                    <b>HDMI</b>
                     <span> 2 </span>
                 </li>
             </ul>
-        </section>
-        <section class="items">
+        </div>
+        <div class="items">
             <ul>
                 <li>
-                    <strong>USB</strong>
+                    <b>USB</b>
                     <span>3</span>
                 </li>
                 <li>
-                    <strong>Width x Height x Depth (without stand)</strong>
+                    <b>Width x Height x Depth (without stand)</b>
                     <span> 1106 mm x 644 mm x 78 mm</span>
                 </li>
                 <li>
-                    <strong>Weight (without stand)</strong>
+                    <b>Weight (without stand)</b>
                     <span> 13.5 kg</span>
                 </li>
                 <li>
-                    <strong>Width x Height x Depth (with stand)</strong>
+                    <b>Width x Height x Depth (with stand)</b>
                     <span>1106 mm x 699 mm x 232 mm</span>
                 </li>
                 <li>
-                    <strong>Weight (with stand)</strong>
+                    <b>Weight (with stand)</b>
                     <span>14 kg</span>
                 </li>
                 <li>
-                    <strong>Stand Features</strong>
+                    <b>Stand Features</b>
                     <span>Wall Mount Included</span>
                 </li>
-
                 <li>
-                    <strong>Warranty Summary</strong>
+                    <b>Warranty Summary</b>
                     <span>1 Year Warranty</span>
                 </li>
-                <li> <strong>Covered in Warranty</strong>
+                <li> <b>Covered in Warranty</b>
                     <span> Technical Failure</span>
                 </li>
-                <li> <strong>Not Covered in Warranty</strong>
+                <li> <b>Not Covered in Warranty</b>
                     <span>Physical, Liquid Damages</span>
                 </li>
-                <li> <strong>Speaker Output RMS</strong>
+                <li> <b>Speaker Output RMS</b>
                     <span> 20 W</span>
                     <li>
-                        <strong>Order Now:</strong>
+                        <b>Order Now:</b>
                         <span><a href="https://www.flipkart.com/panasonic-fx730-series-123cm-49-inch-ultra-hd-4k-led-smart-tv/p/itmf6mfge2ntyqy8?pid=TVSF6MFGJH4NATA5&lid=LSTTVSF6MFGJH4NATA5TL2PQR&marketplace=FLIPKART&srno=s_1_1&otracker=search&fm=SEARCH&iid=88555617-752e-4532-9dd0-732e98d94c5f.TVSF6MFGJH4NATA5.SEARCH&ppt=SearchPage&ppn=Search&ssid=0ludp2xie80000001535432898218&qH=e5ce42320a5dd9ab">
                                 Click Here</a></span>
                     </li>
             </ul>
-        </section>
+        </div>
     </div>
     <hr style="padding:3px;">
     <div class="item_container" id="E-phones">
-        <section class="items">
-            <img src="../root/Drawables/Images/Shure.png">
-        </section>
-        <section class="items">
+        <div class="items">
+            <img src="../root/Drawables/Images/Shure.png" alt="Shure">
+        </div>
+        <div class="items">
             <ul>
                 <li>
-                    <strong>Brand:</strong>
+                    <b>Brand:</b>
                     <span>Shure</span>
                 </li>
                 <li>
-                    <strong>Model:</strong>
-                    <span>SE425/span>
-
+                    <b>Model:</b>
+                    <span>SE425</span>
                 </li>
                 <li>
-                    <strong>Price:</strong>
+                    <b>Price:</b>
                     <span>18,000</span>
-
                 </li>
                 <li>
-                    <strong> Headphone Design:</strong>
+                    <b> Headphone Design:</b>
                     <span>In-Ear</span>
                 </li>
                 <li>
-                    <strong>Driver Unit:</strong>
+                    <b>Driver Unit:</b>
                     <span>Dual Dynamic MicroDriver</span>
                 </li>
                 <li>
-                    <strong>Microphone:</strong>
+                    <b>Microphone:</b>
                     <span>No</span>
                 </li>
                 <li>
-                    <strong>Frequency Response:</strong>
+                    <b>Frequency Response:</b>
                     <span>20Hz-19000Hz</span>
                 </li>
                 <li>
-                    <strong>Impedance:</strong>
+                    <b>Impedance:</b>
                     <span>22 Ohm</span>
                 </li>
                 <li>
-                    <strong>Plug Type:</strong>
+                    <b>Plug Type:</b>
                     <span>3.5 mm</span>
                 </li>
                 <li>
-                    <strong>Magnet:</strong>
+                    <b>Magnet:</b>
                     <span>Neodymium</span>
                 </li>
                 <li>
-                    <strong>Sensitivity:</strong>
+                    <b>Sensitivity:</b>
                     <span>109dB@1mW</span>
                 </li>
                 <li>
-                    <strong>Isolation:</strong>
+                    <b>Isolation:</b>
                     <span>37dB</span>
                 </li>
-
             </ul>
-        </section>
-        <section class="items">
+        </div>
+        <div class="items">
             <ul>
                 <li>
-                    <strong>Brand:</strong>
+                    <b>Brand:</b>
                     <span>V-MODA</span>
                 </li>
                 <li>
-                    <strong>Model:</strong>
+                    <b>Model:</b>
                     <span></span>
-
                 </li>
                 <li>
-                    <strong>:</strong>
+                    <b>:</b>
                     <span>Price</span>
-
                 </li>
                 <li>
-                    <strong>Warranty:</strong>
+                    <b>Warranty:</b>
                     <span>1 Year</span>
                 </li>
                 <li>
-                    <strong>Bass Heavy:</strong>
+                    <b>Bass Heavy:</b>
                     <span>No</span>
                 </li>
                 <li>
-                    <strong>Black foam:</strong>
+                    <b>Black foam:</b>
                     <span> S / M / L</span>
-
                 </li>
                 <li>
-                    <strong>Soft flex Sleeves:</strong>
+                    <b>Soft flex Sleeves:</b>
                     <span>S / M / L</span>
-
                 </li>
                 <li>
-                    <strong> Adaptar:</strong>
+                    <b> Adaptar:</b>
                     <span>6.5 to 3.5mm</span>
-
                 </li>
                 <li>
-                    <strong>Type:</strong>
+                    <b>Type:</b>
                     <span>IEM</span>
                 </li>
                 <li>
-                    <strong>Cables Type:</strong>
+                    <b>Cables Type:</b>
                     <span>Detachable</span>
                 </li>
                 <li>
-                    <strong>Quality:</strong>
+                    <b>Quality:</b>
                     <span>Audiphiles</span>
                 </li>
                 <li>
-                    <strong>Oredr Now</strong>
+                    <b>Oredr Now</b>
                     <span>
                         <a href="https://www.headphonezone.in/collections/in-ear-monitors/products/shure-se425">Click here</a>
                     </span>
                 </li>
             </ul>
-        </section>
+        </div>
     </div>
     <hr style="padding:3px;">
     <div class="item_container">
-        <section class="items">
-            <img src="../root/Drawables/Images/RHA.png">
-        </section>
-        <section class="items">
+        <div class="items">
+            <img src="../root/Drawables/Images/RHA.png" alt="RHA">
+        </div>
+        <div class="items">
             <ul>
-
-                <strong>Brand:</strong>
-                <span>RHA</span>
+                <li>
+                    <b>Brand:</b>
+                    <span>RHA</span>
                 </li>
                 <li>
-                    <strong>Model:</strong>
+                    <b>Model:</b>
                     <span>MA-650</span>
-
                 </li>
                 <li>
-                    <strong>Price:</strong>
+                    <b>Price:</b>
                     <span>4,999</span>
-
                 </li>
                 <li>
                     <li>
-                        <strong> Headphone Design:</strong>
+                        <b> Headphone Design:</b>
                         <span>In-Ear</span>
                     </li>
                     <li>
-                        <strong>Driver Unit:</strong>
+                        <b>Driver Unit:</b>
                         <span>Custom Drivers</span>
                     </li>
                     <li>
-                        <strong>Microphone:</strong>
+                        <b>Microphone:</b>
                         <span>Yes</span>
                     </li>
                     <li>
-                        <strong>Frequency Response:</strong>
+                        <b>Frequency Response:</b>
                         <span>26Hz-40000Hz</span>
                     </li>
                     <li>
-                        <strong>Impedance:</strong>
+                        <b>Impedance:</b>
                         <span>16 Ohm</span>
                     </li>
                     <li>
-                        <strong>Plug Type:</strong>
+                        <b>Plug Type:</b>
                         <span>3.5 mm Gold Plated</span>
                     </li>
                     <li>
-                        <strong>Magnet:</strong>
+                        <b>Magnet:</b>
                         <span>Neodymium</span>
                     </li>
                     <li>
-                        <strong>Sensitivity:</strong>
+                        <b>Sensitivity:</b>
                         <span>100dB@1mW</span>
                     </li>
                     <li>
-                        <strong>Isolation:</strong>
+                        <b>Isolation:</b>
                         <span>31dB</span>
                     </li>
-
             </ul>
-        </section>
-        <section class="items">
+        </div>
+        <div class="items">
             <ul>
                 <li>
-                    <strong>Warranty:</strong>
+                    <b>Warranty:</b>
                     <span>1 Year</span>
                 </li>
                 <li>
-                    <strong>Bass Heavy:</strong>
+                    <b>Bass Heavy:</b>
                     <span>No</span>
                 </li>
                 <li>
-                    <strong>Black foam:</strong>
+                    <b>Black foam:</b>
                     <span> NA</span>
-
                 </li>
                 <li>
-                    <strong>Soft flex Sleeves:</strong>
+                    <b>Soft flex Sleeves:</b>
                     <span>S / M / L</span>
-
                 </li>
                 <li>
-                    <strong> Adaptar:</strong>
+                    <b> Adaptar:</b>
                     <span> 3.5mm</span>
-
                 </li>
                 <li>
-                    <strong>Type:</strong>
+                    <b>Type:</b>
                     <span>Flat</span>
                 </li>
                 <li>
-                    <strong>Cables Type:</strong>
+                    <b>Cables Type:</b>
                     <span>Tangle Free</span>
                 </li>
                 <li>
-                    <strong>Quality:</strong>
+                    <b>Quality:</b>
                     <span>Regular Listning</span>
                 </li>
                 <li>
-                    <strong>Oredr Now</strong>
+                    <b>Oredr Now</b>
                     <span>
                         <a href="https://www.headphonezone.in/collections/in-ears/products/rha-ma650a">Click here</a>
                     </span>
                 </li>
             </ul>
-        </section>
+        </div>
     </div>
     <hr style="padding:3px;">
     <div class="item_container">
-        <section class="items">
-            <img src="../root/Drawables/Images/Vmoda.png">
-        </section>
-        <section class="items">
+        <div class="items">
+            <img src="../root/Drawables/Images/Vmoda.png" alt="V-MODA">
+        </div>
+        <div class="items">
             <ul>
                 <li>
-                    <strong>Brand:</strong>
+                    <b>Brand:</b>
                     <span>V-MODA</span>
                 </li>
                 <li>
-                    <strong>Model:</strong>
+                    <b>Model:</b>
                     <span>Cross Fade 2 Wireless</span>
-
                 </li>
                 <li>
-                    <strong>Price:</strong>
+                    <b>Price:</b>
                     <span>24,900</span>
-
                 </li>
                 <li>
-                    <strong> Headphone Design:</strong>
+                    <b> Headphone Design:</b>
                     <span>Over-Ear</span>
                 </li>
                 <li>
-                    <strong>Driver Unit:</strong>
+                    <b>Driver Unit:</b>
                     <span>50mm</span>
                 </li>
                 <li>
-                    <strong>Microphone:</strong>
+                    <b>Microphone:</b>
                     <span>Yes</span>
                 </li>
                 <li>
-                    <strong>Frequency Response:</strong>
+                    <b>Frequency Response:</b>
                     <span>50Hz-40000Hz</span>
                 </li>
                 <li>
-                    <strong>Impedance:</strong>
+                    <b>Impedance:</b>
                     <span>32 Ohm</span>
                 </li>
                 <li>
-                    <strong>Plug Type:</strong>
+                    <b>Plug Type:</b>
                     <span>3.5 mm Gold Plated</span>
                 </li>
                 <li>
-                    <strong>Magnet:</strong>
+                    <b>Magnet:</b>
                     <span>Neodymium</span>
                 </li>
                 <li>
-                    <strong>Bluetooth Version:</strong>
+                    <b>Bluetooth Version:</b>
                     <span>4.1</span>
                 </li>
                 <li>
-                    <strong>Battry:</strong>
+                    <b>Battry:</b>
                     <span>14Hours (Play)</span>
                 </li>
-
             </ul>
-        </section>
-        <section class="items">
+        </div>
+        <div class="items">
             <ul>
                 <li>
-                    <strong>Warranty:</strong>
+                    <b>Warranty:</b>
                     <span>1 Year</span>
                 </li>
                 <li>
-                    <strong>Wire less:</strong>
+                    <b>Wire less:</b>
                     <span>Yes</span>
                 </li>
                 <li>
-                    <strong>Black foam:</strong>
+                    <b>Black foam:</b>
                     <span> Yes</span>
-
                 </li>
                 <li>
-                    <strong>Soft flex Sleeves:</strong>
+                    <b>Soft flex Sleeves:</b>
                     <span>NA</span>
-
                 </li>
                 <li>
-                    <strong> Adaptar:</strong>
+                    <b> Adaptar:</b>
                     <span> 3.5mm</span>
-
                 </li>
                 <li>
-                    <strong>Type:</strong>
+                    <b>Type:</b>
                     <span>Flat</span>
                 </li>
                 <li>
-                    <strong>Cables Type:</strong>
+                    <b>Cables Type:</b>
                     <span>Tangle Free</span>
                 </li>
                 <li>
-                    <strong>Quality:</strong>
+                    <b>Quality:</b>
                     <span>Audiophile</span>
                 </li>
                 <li>
-                    <strong>Oredr Now</strong>
+                    <b>Oredr Now</b>
                     <span>
                         <a href="https://www.headphonezone.in/collections/wireless-bluetooth-headphones/products/v-moda-crossfade-2-wireless">Click
                             here
@@ -1226,38 +1177,38 @@
                     </span>
                 </li>
             </ul>
-        </section>
+        </div>
     </div>
-    <section class="about_us" id="dd">
-        <section class="about_us_section_top">So..How do We do it ??</section>
-        <section class="about_us_info_container">
+    <!-- How do we do it section -->
+    <div class="about_us" id="dd">
+        <div class="about_us_section_top">So..How do We do it ??</div>
+        <div class="about_us_info_container">
             <span>Our Success rooted Deeply in the Technology we use.</span>
             <span>We run Complex Algorithm analysis on products.</span>
             <span>We relese the analysis to our B2C clients.</span>
             <span>We are the smartest group of pepole- </span>
             <span>Everyone is Dedicated to make our Customer </span>
             <span> Get the LOWEST PRICE.</span>
-        </section>
-    </section>
+        </div>
+    </div>
     <footer>
-        <section style="box-shado:3px;"><a href="#" class="fa fa-facebook"></a></section>
-        <section><a href="#" class="fa fa-twitter"></a></section>
-        <section><a href="#" class="fa fa-google"></a></section>
-        <section><a href="#" class="fa fa-linkedin"></a></section>
-        <section><a href="#" class="fa fa-youtube"></a></section>
-        <section><a href="#" class="fa fa-instagram"></a></section>
-        <section><a href="#" class="fa fa-pinterest"></a></section>
-        <section><a href="#" class="fa fa-snapchat-ghost"></a></section>
-        <section><a href="#" class="fa fa-skype"></a></section>
-         <section><a href="#" class="fa fa-vine"></a></section>
-         <section><a href="#" class="fa fa-foursquare"></a></section>
-         <section><a href="#" class="fa fa-stumbleupon"></a></section>
-         <section><a href="#" class="fa fa-flickr"></a></section>
-         <section><a href="#" class="fa fa-yahoo"></a></section>
-         <section><a href="#" class="fa fa-reddit"></a></section>
-        <section> <a href="#" class="fa fa-rss"></a></section>
+        <div><a href="#1" class="fa fa-facebook" id="1"></a></div>
+        <div><a href="#2" class="fa fa-twitter" id="2"></a></div>
+        <div><a href="#3" class="fa fa-google" id="3"></a></div>
+        <div><a href="#4" class="fa fa-linkedin" id="4"></a></div>
+        <div><a href="#5" class="fa fa-youtube" id="5"></a></div>
+        <div><a href="#6" class="fa fa-instagram" id="6"></a></div>
+        <div><a href="#7" class="fa fa-pinterest" id="7"></a></div>
+        <div><a href="#8" class="fa fa-snapchat-ghost" id="8"></a></div>
+        <div><a href="#9" class="fa fa-skype" id="9"></a></div>
+        <div><a href="#10" class="fa fa-vine" id="10"></a></div>
+        <div><a href="#11" class="fa fa-foursquare" id="11"></a></div>
+        <div><a href="#12" class="fa fa-stumbleupon" id="12"></a></div>
+        <div><a href="#13" class="fa fa-flickr" id="13"></a></div>
+        <div><a href="#14" class="fa fa-yahoo" id="14"></a></div>
+        <div><a href="#15" class="fa fa-reddit" id="15"></a></div>
+        <div> <a href="#16" class="fa fa-rss" id="16"></a></div>
     </footer>
-
 </body>
 
 </html>
