@@ -4,46 +4,21 @@
 <head>
     <meta charset="utf-8" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            // Add smooth scrolling to all links
-            $("a").on('click', function (event) {
-
-                // Make sure this.hash has a value before overriding default behavior
-                if (this.hash !== "") {
-                    // Prevent default anchor click behavior
-                    event.preventDefault();
-
-                    // Store hash
-                    var hash = this.hash;
-
-                    // Using jQuery's animate() method to add smooth page scroll
-                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 800, function () {
-
-                        // Add hash (#) to URL when done scrolling (default click behavior)
-                        window.location.hash = hash;
-                    });
-                } // End if
-            });
-        });
-    </script>
+    <script type="text/javascript" src="./Script_Files/Functionality.js"></script>
 
     <meta name="viewport" content="width=device-width , initial-scale = 1">
-    <link href="https://fonts.googleapis.com/css?family=Basic|Exo+2|Lobster|Pacifico|Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Basic|Crimson+Text|Exo+2|Fjalla+One|Lobster|Pacifico|Quicksand" rel="stylesheet">
     <link rel="stylesheet" href="./files_CSS/list_items.css">
 </head>
 
 <body>
     <header class="header_style">
-        <div class="header_slider">
+        <div class="header_slider" onclick="theEnableFunction('slider')">
             <hr class="header_slider_inside" />
             <hr class="header_slider_inside" />
             <hr class="header_slider_inside" />
         </div>
-        <img src="./Drawables/Images/logo.png">
+        <a href="#home"> <img src="./Drawables/Images/logo.png"></a>
         <section class="header_section">
             <a href="#mobiles" style="color:white; text-decoration: none;"> Mobiles</a>
         </section>
@@ -53,8 +28,27 @@
         <section class="header_section">
             <a href="#E-phones" style="color:white; text-decoration: none;"> Earphones</a>
         </section>
+        <section class="header_section">
+            <a href="#About_us" style="color:white; text-decoration: none;"> About Us</a>
+        </section>
     </header>
-    <div class="div1">
+    <section class="The_drop_down" id="slider">
+        <section class="The_drop_down_sections">
+            <a href="#mobiles" style="color:white; text-decoration: none;" onclick="theEnableFunction('slider')"> Mobiles</a>
+        </section>
+        <section class="The_drop_down_sections">
+            <a href="#Tv" style="color:white; text-decoration: none;" onclick="theEnableFunction('slider')"> Smart-Tv</a>
+        </section>
+        <section class="The_drop_down_sections">
+            <a href="#E-phones" style="color:white; text-decoration: none;" onclick="theEnableFunction('slider')"> Earphones</a>
+        </section>
+        <section class="The_drop_down_sections">
+            <a href="#About_us" style="color:white; text-decoration: none;" onclick="theEnableFunction('slider')"> About
+                Us
+            </a>
+        </section>
+    </section>
+    <div class="div1" id="home">
         <section class="div1_content_section">
             <h1 style="color:white;font-size:10vw;"> Shopio</h1>
         </section>
@@ -62,30 +56,43 @@
             <section class="below_view">
                 <h1>
                     <ul>
-                        <li> Awsome Deals Everyday!! </li>
+                        <li> Awsome Deals Everyday !! </li>
                     </ul>
                 </h1>
             </section>
             <section class="below_view">
                 <h1>
                     <ul>
-                        <li> Apply Coupon </li>
+                        <li> Apply Coupon: 10%ONTOP </li>
                     </ul>
                 </h1>
             </section>
             <section class="below_view">
                 <h1>
                     <ul>
-                        <li> Get your Best Deal!!</li>
+                        <li> Get your Best Deal !!</li>
                     </ul>
                 </h1>
             </section>
         </section>
         <div class="div1_activate_on_shrink">
-            <h1>Limited period offer Oreder Now!!</h1>
+            <h1>Apply Coupon: 10%ONTOP</h1>
         </div>
 
     </div>
+    <section class="about_us" id="About_us">
+        <section class="about_us_section_top"> About Us</section>
+        <section class="about_us_info_container">
+            <span>We DO NOT sell products.</span>
+            <span>Our team Generates Coupon.</span>
+            <span>SHOPIO Coupon will apply on trusted B2C platforms.</span>
+            <span>New Trending Items Everyday on Shopio.</span>
+            <span>Apply SHOPIO COUPON on the links mentioned.</span>
+            <span>Want to know how we work.. <a href="#dd" style="color:white; text-decoration: none;"> Click Here</a></span>
+            <span>Happy Shopping !!</span>
+        </section>
+
+    </section>
 
     <div class="item_container" id="mobiles">
         <section class="items">
@@ -1213,12 +1220,25 @@
                     <strong>Oredr Now</strong>
                     <span>
                         <a href="https://www.headphonezone.in/collections/wireless-bluetooth-headphones/products/v-moda-crossfade-2-wireless">Click
-                            here</a>
+                            here
+                        </a>
                     </span>
                 </li>
             </ul>
         </section>
     </div>
+    <section class="about_us" id="dd">
+        <section class="about_us_section_top">So..How do We do it ??</section>
+        <section class="about_us_info_container">
+            <span>Our Success rooted Deeply in the Technology we use.</span>
+            <span>We run Complex Algorithm analysis on products.</span>
+            <span>We relese the analysis to our B2C clients.</span>
+            <span>We are the smartest group of pepole- </span>
+            <span>Everyone is Dedicated to make our Customer </span>
+            <span> Get the LOWEST PRICE.</span>
+        </section>
+    </section>
+
 </body>
 
 </html>
