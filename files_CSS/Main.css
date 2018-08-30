@@ -3,6 +3,26 @@
   margin: 0px;
 }
 
+/* Base Component Style */
+
+h1 {
+  color: white;
+  font-size: 10vw;
+}
+
+.The_hr {
+  padding: 3px;
+}
+
+h2 {
+  color: white;
+  font-family: 'Crimson Text', serif;
+}
+
+/* Layout Desing starts here */
+
+/* header component */
+
 .header_style {
   display: flex;
   flex-flow: row;
@@ -18,18 +38,17 @@
   align-items: center;
   height: 89%;
   float: right;
-  border-radius: 4px;
+  border-radius: 6px;
   margin-right: 4px;
-}
-
-#mobile {
-  scroll-behavior: smooth;
+  padding-top: 3px;
 }
 
 .header_style a, .The_drop_down a, .item_container a, .about_us a {
   color: white;
   text-decoration: none;
 }
+
+/* the mobile view .header_slider drop down */
 
 .header_section {
   display: flex;
@@ -42,8 +61,6 @@
   color: azure;
   border-radius: 20px;
 }
-
-/* the mobile view .header_slider drop down */
 
 .header_slider {
   display: none;
@@ -62,12 +79,16 @@
 .header_slider_inside {
   background-color: azure;
   width: inherit;
-  height: 5px;
+  height: 3px;
   border-radius: 10px;
 }
 
 h3, .below_view ul {
   color: white;
+}
+
+#mobile {
+  scroll-behavior: smooth;
 }
 
 .The_drop_down {
@@ -94,6 +115,8 @@ h3, .below_view ul {
   border-radius: 5px;
   font-family: 'Courier New', Courier, monospace;
 }
+
+/* The hero section */
 
 .div1 {
   width: 100%;
@@ -149,6 +172,8 @@ h3, .below_view ul {
   align-items: center;
 }
 
+/* Product design module */
+
 .items ul li {
   padding-top: 2%;
   list-style: none;
@@ -183,6 +208,8 @@ h3, .below_view ul {
 .div1_content_section h1 {
   font-family: 'Basic', sans-serif;
 }
+
+/* The about us section */
 
 .about_us {
   display: flex;
@@ -228,165 +255,7 @@ h3, .below_view ul {
   align-items: center;
 }
 
-@media screen and (max-width:805px) {
-  .about_us_info_container {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-    background-color: #5B3F3C;
-    color: wheat;
-    font-size: 2.7vw;
-    list-style: none;
-    font-family: 'Crimson Text', serif;
-  }
-  .about_us_section_top {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 30%;
-    background-color: #5B3F3C;
-    color: wheat;
-    font-size: 5.4vw;
-    font-family: 'Fjalla One', sans-serif;
-  }
-  .about_us_section_top {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 30%;
-    background-color: #5B3F3C;
-    color: wheat;
-    font-size: 4.5vw;
-    font-family: 'Fjalla One', sans-serif;
-  }
-}
-
-@media screen and (max-width:501px) {
-  .about_us_info_container {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-    background-color: #5B3F3C;
-    color: wheat;
-    font-size: 4.4vw;
-    list-style: none;
-    font-family: 'Crimson Text', serif;
-  }
-  .about_us {
-    height: 55vh;
-  }
-  .about_us_section_top {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 30%;
-    background-color: #5B3F3C;
-    color: wheat;
-    font-size: 6.7vw;
-    font-family: 'Fjalla One', sans-serif;
-  }
-}
-
-@media screen and ( max-width:780px) {
-  .header_section {
-    display: none;
-  }
-  .div1 {
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .header_slider {
-    display: flex;
-    float: left;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 30px;
-    height: inherit;
-    background-color: #9B4643;
-    float: left;
-    align-items: center;
-  }
-  .header_style {
-    display: block;
-    flex-flow: row;
-    justify-content: flex-start;
-    height: 40px;
-    width: 100%;
-    background: #0F0D35;
-    position: fixed;
-    border-radius: 20px;
-  }
-  .header_style img {
-    align-items: center;
-    float: right;
-    margin-right: 4.6vw;
-    justify-content: center;
-    height: inherit;
-  }
-}
-
-@media screen and (max-width: 780px) {
-  .item_container {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #605154;
-  }
-  .items {
-    display: flex;
-    width: 80%;
-    height: wrap;
-    font-family: 'Quicksand', sans-serif;
-    justify-content: center;
-    align-items: center;
-    max-width: 60%;
-    min-width: 30%;
-  }
-}
-
-@media screen and (max-width: 647px) {
-  .div1_content_section {
-    display: none;
-  }
-  .div1 {
-    width: 100%;
-    height: 80vh;
-    background-attachment: fixed;
-    background-image: url("../Drawables/Images/hero2.jpg");
-    padding-top: 40px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    background-size: cover;
-    justify-content: center;
-    align-items: center;
-  }
-  .div1_activate_on_shrink {
-    display: block;
-    margin-left: 25%;
-    width: 50%;
-    height: 20%;
-  }
-}
-
-@media screen and (max-width: 340px) {
-  .header_slider img {
-    align-items: center;
-    margin-left: 30%;
-    border-radius: 5px;
-    margin-right: 37vw;
-  }
-}
+/* The footer */
 
 .fa {
   padding: 20px;
@@ -492,4 +361,169 @@ footer {
   display: flex;
   flex-direction: row;
   overflow: scroll;
+}
+
+/* @ mediaS  */
+
+@media screen and (max-width:805px) {
+  .about_us_info_container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    background-color: #5B3F3C;
+    color: wheat;
+    font-size: 2.7vw;
+    list-style: none;
+    font-family: 'Crimson Text', serif;
+  }
+  .about_us_section_top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+    background-color: #5B3F3C;
+    color: wheat;
+    font-size: 5.4vw;
+    font-family: 'Fjalla One', sans-serif;
+  }
+  .about_us_section_top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+    background-color: #5B3F3C;
+    color: wheat;
+    font-size: 4.5vw;
+    font-family: 'Fjalla One', sans-serif;
+  }
+}
+
+@media screen and (max-width:501px) {
+  .about_us_info_container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    background-color: #5B3F3C;
+    color: wheat;
+    font-size: 4.4vw;
+    list-style: none;
+    font-family: 'Crimson Text', serif;
+  }
+  .about_us {
+    height: 55vh;
+  }
+  .about_us_section_top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+    background-color: #5B3F3C;
+    color: wheat;
+    font-size: 6.7vw;
+    font-family: 'Fjalla One', sans-serif;
+  }
+}
+
+@media screen and ( max-width:780px) {
+  .header_section {
+    display: none;
+  }
+  .div1 {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header_slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 32px;
+    background-color: #9B4643;
+    float: right;
+    margin-right: 5%;
+    align-items: center;
+    margin-top: 3px;
+  }
+  .header_style {
+    display: block;
+    flex-flow: row;
+    justify-content: flex-start;
+    height: 40px;
+    width: 100%;
+    background: #0F0D35;
+    position: fixed;
+    border-radius: 20px;
+  }
+  .header_style img {
+    align-items: center;
+    float: left;
+    margin-left: 5%;
+    margin-right: 4.6vw;
+    justify-content: center;
+    height: 34px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .item_container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #605154;
+  }
+  .items {
+    display: flex;
+    width: 80%;
+    height: wrap;
+    font-family: 'Quicksand', sans-serif;
+    justify-content: center;
+    align-items: center;
+    max-width: 60%;
+    min-width: 30%;
+  }
+}
+
+@media screen and (max-width: 647px) {
+  .div1_content_section {
+    display: none;
+  }
+  .div1 {
+    width: 100%;
+    height: 80vh;
+    background-attachment: fixed;
+    background-image: url("../Drawables/Images/hero2.jpg");
+    padding-top: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+  }
+  .div1_activate_on_shrink {
+    display: block;
+    width: 50%;
+    height: 20%;
+    margin-left: 20%;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .header_slider img {
+    align-items: center;
+    margin-left: 30%;
+    border-radius: 5px;
+    margin-right: 37vw;
+    height: 32px;
+  }
 }
